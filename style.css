@@ -1,0 +1,84 @@
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+HTML{
+	font-family: 'Roboto', sans-serif;
+	background: #000;
+}
+.wrapper{
+	width: 1020px;
+	margin: auto;
+}
+.cap{
+	height: 92px;
+	display: flex;
+	background: #fff;
+}
+.logo{
+	padding: 8px 8px 8px 30px;
+}
+.logo-text{
+	padding-left: 26px;
+	padding-top: 4px;
+}
+.logo-text h1{
+	padding: 0px;
+	margin-top: 20px;
+	font-size: 20px;
+	}
+.logo-text h3{
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+}
+.menu{
+	margin: 33px 0 0 300px;
+}
+.menu a{
+	text-decoration: none;
+	font-size: 18px;
+	padding-left: 24px;
+	padding-right: 24px;
+	margin-top: 30px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #000;
+}
+.menu a:hover{
+	color: #fff;
+	background: #1bbc9b;
+}
+.menu ul{
+	list-style: none;
+	display: flex;
+}
+.img-block{
+	height: 460px;
+	background-image: url("fon.png");
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.img-block h1{
+	margin: 0px;
+	padding-top: 120px;
+	text-align: center;
+	font-size: 55px;
+	color: rgb(255, 255, 255);
+}
+.portfolio{
+	margin: 0px;
+	padding: 0px;
+	background: #fff;
+}
+.portfolio-up{
+	color: #000;
+}
+.portfolio-bottom{
+	
+}
+
+
