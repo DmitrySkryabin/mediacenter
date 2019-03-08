@@ -76,9 +76,96 @@ HTML{
 }
 .portfolio-up{
 	color: #000;
+	text-align: center;
+}
+.portfolio-up h1{
+	font-size: 30px;
+	padding-top: 30px;
+}
+.portfolio-up p{
+	font-size: 18px;
+	padding-top: 10px;
+}
+.portfolio-up-menu{
+	padding-top: 30px;
+}
+.portfolio-up-menu a{
+	text-decoration: none;
+	color: #fff;
+	background: #1bbc9b;
+	font-size: 16px;
+	padding: 10px 15px 10px 15px;
+	margin: 0 2px 0 2px;
 }
 .portfolio-bottom{
-	
+	margin-top: 100px;
 }
-
+.img-container{
+	margin: auto;
+	display: grid;
+	grid-template-columns: 34% 33% 33%;
+}
+.img-text{
+	margin: auto;
+	text-align: center;
+}
+.img-container p{
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.about-us{
+	background: #1bbc9b;
+}
+.about-us h3{
+	font-size: 30px;
+	text-align: center;
+	padding-top: 40px;
+	color: #fff;
+	padding-bottom: 50px;
+}
+.about-container{
+	display: flex;
+	justify-content: center;
+	height: 450px;
+}
+.about-info{
+	padding: 0 25px;
+}
+.about-photo{
+	margin: 0px;
+	padding: 0px;
+	height: 200px;
+}
+.about-text{
+	padding-top: 0px;
+	margin-top: 0px;
+	text-align: center;
+	height: 180px;
+	background: #fff;
+}
+.about-text h4{
+	padding-top: 0px;
+	margin-top: 0px;
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+.about-text h5{
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+.about-text p{
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+.feedback{
+	background: grey;
+}
+.feedback-content{
+	display: flex;
+}
+footer{
+	background: #000;
+	color: #fff;
+}
 
