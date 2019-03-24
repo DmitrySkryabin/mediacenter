@@ -17,8 +17,10 @@ HTML{
 	background: #fff;
 }
 .logo{
-	padding: 8px 8px 8px 30px;
+	padding: 0px 8px 8px 30px;
+	margin-top: -5px;
 }
+
 .logo-text{
 	padding-left: 26px;
 	padding-top: 4px;
@@ -56,7 +58,7 @@ HTML{
 }
 .img-block{
 	height: 460px;
-	background-image: url("fon.png");
+	background-image: url("fon1.png");
 	padding: 0px;
 	margin: 0px;
 	margin-bottom: 0px;
@@ -99,11 +101,12 @@ HTML{
 }
 .portfolio-bottom{
 	margin-top: 100px;
+	padding-bottom: 50px;
 }
 .img-container{
 	margin: auto;
 	display: grid;
-	grid-template-columns: 34% 33% 33%;
+	grid-template-columns: 34% 33% 33%;\
 }
 .img-text{
 	margin: auto;
@@ -159,13 +162,70 @@ HTML{
 	padding-bottom: 5px;
 }
 .feedback{
-	background: grey;
+	background: white;
+}
+.feedback-text{
+	text-align: center;
+	color: grey;
+	padding-bottom: 60px;
+}
+.feedback-text h3{
+	font-size: 30px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.feedback-text p{
+	font-size: 20px;
 }
 .feedback-content{
 	display: flex;
+	padding-bottom: 60px;
 }
-footer{
-	background: #000;
+.feedback-form{
+	padding-left: 30px;
+}
+.feedback-input{
+	border: 2px solid #cccccc;
+	height: 40px;
+	margin-right: 20px;
+	width: 230px;
+}
+.feedback-input-area{
+	margin-top: 20px;
+	border: 2px solid #cccccc;
+	height: 140px;
+	margin-right: 20px;
+	width: 488px;
+}
+.feedback-input-submit{
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+	background: #1bbc9b;
+	height: 40px;
+	width: 150px;
+	border: none;
+	color: white;
+	font-size: 20px;
+}
+.feedback-content-right{
+	color: grey;
+	padding-left: 30px;
+}
+.feedback-content-right{
+	font-size: 20px;
+}
+.feedback-addreses{
+	padding-top: 60px;
+}
+.footer-content{
+	background: grey;
 	color: #fff;
+	height: 100px;
+	color: white;
+	padding-top: 40px;
+}
+.footer-content p{
+	padding-left: 30px;
 }
 
