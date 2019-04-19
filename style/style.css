@@ -5,7 +5,7 @@
 }
 HTML{
 	font-family: 'Roboto', sans-serif;
-	background: #000;
+	background: #ff5;
 }
 .wrapper{
 	width: 1020px;
@@ -24,6 +24,10 @@ HTML{
 .logo-text{
 	padding-left: 26px;
 	padding-top: 4px;
+}
+.logo-text a{
+	text-decoration: none;
+	color: #000;
 }
 .logo-text h1{
 	padding: 0px;
@@ -58,7 +62,7 @@ HTML{
 }
 .img-block{
 	height: 460px;
-	background-image: url("fon1.png");
+	background-image: url("../images/fon1.png");
 	padding: 0px;
 	margin: 0px;
 	margin-bottom: 0px;
@@ -90,6 +94,7 @@ HTML{
 }
 .portfolio-up-menu{
 	padding-top: 30px;
+	padding-bottom: 80px;
 }
 .portfolio-up-menu a{
 	text-decoration: none;
@@ -100,13 +105,12 @@ HTML{
 	margin: 0 2px 0 2px;
 }
 .portfolio-bottom{
-	margin-top: 100px;
 	padding-bottom: 50px;
 }
 .img-container{
 	margin: auto;
 	display: grid;
-	grid-template-columns: 34% 33% 33%;\
+	grid-template-columns: 25% 25% 25% 25%;
 }
 .img-text{
 	margin: auto;
@@ -119,11 +123,13 @@ HTML{
 }
 .about-us{
 	background: #1bbc9b;
+	height: 709px;
 }
 .about-us h3{
+	text-transform: uppercase;
 	font-size: 30px;
 	text-align: center;
-	padding-top: 40px;
+	padding-top: 80px;
 	color: #fff;
 	padding-bottom: 50px;
 }
@@ -152,21 +158,40 @@ HTML{
 	margin-top: 0px;
 	font-size: 20px;
 	padding-bottom: 5px;
-}
-.about-text h5{
-	font-size: 14px;
-	padding-bottom: 20px;
+	color: #444444;
+	padding-top: 40px;
 }
 .about-text p{
-	font-size: 12px;
-	padding-bottom: 5px;
+	font-size: 14px;
+	padding-bottom: 20px;
+	padding-top: 30px;
+	color: #444444;
+}
+.about-info-right{
+	width: 530px;
+	background: white;
+	height: 380px;
+}
+.about-info-right-text{
+	padding: 50px 20px 50px 20px;
+	font-size: 20px;
+	color: #444444;
+}
+.about-footer{
+	margin: auto;
+	text-align: center;
+}
+.about-footer-img{
+	margin-left: 420px;
+	padding-right: 420px;
 }
 .feedback{
+	padding-top: 80px;
 	background: white;
 }
 .feedback-text{
 	text-align: center;
-	color: grey;
+	color: #444444;
 	padding-bottom: 60px;
 }
 .feedback-text h3{
@@ -188,14 +213,19 @@ HTML{
 	border: 2px solid #cccccc;
 	height: 40px;
 	margin-right: 20px;
-	width: 230px;
+	width: 220px;
+	padding-left: 10px;
 }
 .feedback-input-area{
 	margin-top: 20px;
 	border: 2px solid #cccccc;
-	height: 140px;
+	height: 130px;
 	margin-right: 20px;
-	width: 488px;
+	width: 478px;
+	padding-left: 10px;
+	padding-top: 10px;
+	font-size: 16px;
+
 }
 .feedback-input-submit{
 	float: right;
@@ -209,11 +239,9 @@ HTML{
 	font-size: 20px;
 }
 .feedback-content-right{
-	color: grey;
-	padding-left: 30px;
-}
-.feedback-content-right{
-	font-size: 20px;
+	color: #444444;
+	padding-left: 0px;
+	font-size: 16px;
 }
 .feedback-addreses{
 	padding-top: 60px;
@@ -224,8 +252,112 @@ HTML{
 	height: 100px;
 	color: white;
 	padding-top: 40px;
+	display: flex;
 }
 .footer-content p{
 	padding-left: 30px;
 }
+.up-button{
+	margin-left: auto;
+}
+.up-button a{
+	font-size: 50px;
+	color: #fff;
+	text-decoration: none;
+	margin-left: 100px;
+}
+/*not main pages part*/
+.about-us-pages{
+	background: #1bbc9b;
+}
+.about-container-pages{
+}
+.about-container-pages-top{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 100px;
+	padding-top: 150px;
+}
+.about-container-pages-bottom{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 150px;
+}
+.about-text-pages{
+	padding-top: 0px;
+	margin-top: 0px;
+	text-align: center;
+	background: #fff;
+	height: 60px;
+}
+.about-text-pages h4{
+	padding-top: 0px;
+	margin-top: 0px;
+	font-size: 18px;
+	padding-bottom: 5px;
+	color: #444444;
+	padding-top: 5px;
+}
+.about-text-pages p{
+	font-size: 14px;
+	padding-bottom: 20px;
+	color: #444444;
+}
 
+/*videos page part*/
+.videos{
+	height: 730px;
+	background: #1bbc9b;
+}
+.meating{
+	height: 211px;
+	background: #fff;
+}
+.meating h3{
+	color: #444444;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 80px;
+}
+/*photos pages part*/
+.photos{
+	height: 710px;
+	background: #1bbc9b;
+}
+.w3-content{
+	padding-top: 60px;
+	padding-bottom: 20px;
+	width: 800px;
+	margin: auto;
+}
+.w3-center{
+	margin-left: 390px;
+}
+.w3-section{
+	padding-bottom: 10px;
+}
+.w3-buton-section{
+	padding-left: 4px;
+}
+.w3-button{
+	color: #444444;
+	height: 30px;
+	width: 120px;
+	background: #fff;
+	border: none;
+}
+.w3-button:hover{
+	background: grey;
+	color: white;
+}
+.demo{
+	width: 30px;
+}
+.demo:hover{
+	background: grey;
+	color: #fff;
+}
+.w3-red{
+	background: red;
+	color: #fff;
+}
