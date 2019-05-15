@@ -1,49 +1,25 @@
+<?php
+	include "../config.php"
+ ?>
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Media center PPOS SVFU</title>
+	<meta charset="utf-8">
+	<title><?php echo $config['title'] ?></title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../static/style/style.css">
 </head>
 
 <header>
-	<div class="wrapper">
-		<div class="cap">
-			<div class="logo">
-				<a href="../main/index.html"><img src="../images/logo.png" alt="logo" width="100px" height="100px"></a>	
-			</div>
-			<div class="logo-text">
-				<a href="../main/index.html">
-				<h1>МЕДИА ЦЕНТР</h1>
-				<h3>ППОС СВФУ</h3></a>
-			</div>
-			<div class="menu">
-			<ul>
-				<li><a href="../main/index.html">Домой</a> </li>
-				<li><a href="#">Блог</a></li>
-				<li><a href="#">Информация</a></li>
-			</ul>
-			</div>
-		</div>
-	</div>
-	</header>
+	<?php
+	include "../header.php"
+	 ?>
+</header>
 <body>
 	<div class="wrapper">
-		<div class="portfolio">
-			<div class="portfolio-up">
-				<div class="portfolio-up-text">
-					<h1>Портфолио</h1>
-					<p>Это мы!</p>
-				</div>
-				<div class="portfolio-up-menu">
-					<a href="">Все</a>
-					<a href="../photos/photos.html" style="background: #16a086;">Фотографы</a>
-					<a href="../videos/videos.html">Видеоргафы</a>
-					<a href="">Дизайнеры</a>
-				</div>
-			</div>
-		</div>
+		<?php
+			include "../header_bottom.php"
+		 ?>
 		<div class="photos">
 			<div class="w3-content" style="max-width:800px">
 			  <img class="mySlides" src="1.jpg" style="width:100%">
@@ -62,12 +38,12 @@
 			  </div>
 			  <div class="w3-buton-section">
 			  	  <button class="w3-button demo" onclick="currentDiv(1)">1</button>
-				  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
-				  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
-				  <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
-				  <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
-				  <button class="w3-button demo" onclick="currentDiv(6)">6</button> 
-				  <button class="w3-button demo" onclick="currentDiv(7)">7</button> 
+				  <button class="w3-button demo" onclick="currentDiv(2)">2</button>
+				  <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+				  <button class="w3-button demo" onclick="currentDiv(4)">4</button>
+				  <button class="w3-button demo" onclick="currentDiv(5)">5</button>
+				  <button class="w3-button demo" onclick="currentDiv(6)">6</button>
+				  <button class="w3-button demo" onclick="currentDiv(7)">7</button>
 			  </div>
 			</div>
 		</div>
@@ -77,7 +53,7 @@
 		<div class="about-us-pages">
 			<div class="about-container-pages">
 				<div class="about-container-pages-top">
-					<div class="about-info"> 
+					<div class="about-info">
 						<div class="about-photo"><img src="lena.jpg" alt="" height="200px" width="200px"></div>
 						<div class="about-text-pages">
 							<h4>Еремисова Лена</h4>
@@ -86,19 +62,19 @@
 					</div>
 				</div>
 				<div class="about-container-pages-bottom">
-					<div class="about-info"> 
+					<div class="about-info">
 					<div class="about-photo"><img src="vlad.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Лихоманов Владислав</h4>
 					</div>
 				</div>
-				<div class="about-info"> 
+				<div class="about-info">
 					<div class="about-photo"><img src="erel.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Никитин Эрэл Бэргэн</h4>
 					</div>
 				</div>
-				<div class="about-info"> 
+				<div class="about-info">
 					<div class="about-photo"><img src="masha.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Капитонова Мария</h4>
@@ -107,7 +83,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		</div>
 	</div>
 </body>

@@ -1,49 +1,26 @@
+<?php
+	include "../config.php"
+ ?>
+
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Media center PPOS SVFU</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../static/style/style.css">
 </head>
 
 <header>
-	<div class="wrapper">
-		<div class="cap">
-			<div class="logo">
-				<a href="../main/index.html"><img src="../images/logo.png" alt="logo" width="100px" height="100px"></a>	
-			</div>
-			<div class="logo-text">
-				<a href="../main/index.html">
-				<h1>МЕДИА ЦЕНТР</h1>
-				<h3>ППОС СВФУ</h3></a>
-			</div>
-			<div class="menu">
-			<ul>
-				<li><a href="../main/index.html">Домой</a> </li>
-				<li><a href="#">Блог</a></li>
-				<li><a href="#">Информация</a></li>
-			</ul>
-			</div>
-		</div>
-	</div>
-	</header>
+<?php
+	include "../header.php"
+ ?>
+</header>
 <body>
 	<div class="wrapper">
-		<div class="portfolio">
-			<div class="portfolio-up">
-				<div class="portfolio-up-text">
-					<h1>Портфолио</h1>
-					<p>Это мы!</p>
-				</div>
-				<div class="portfolio-up-menu">
-					<a href="">Все</a>
-					<a href="../photos/photos.html">Фотографы</a>
-					<a href="../videos/videos.html" style="background: #16a086;">Видеоргафы</a>
-					<a href="">Дизайнеры</a>
-				</div>
-			</div>
-		</div>
+		<?php
+			include "../header_bottom.php"
+		 ?>
 		<div class="videos">
 			ТУТА ВИЕДЕО!
 		</div>
@@ -53,20 +30,20 @@
 		<div class="about-us-pages">
 			<div class="about-container-pages">
 				<div class="about-container-pages-top">
-					<div class="about-info"> 
+					<div class="about-info">
 						<div class="about-photo"><img src="egor.jpg" alt="" height="200px" width="200px"></div>
 						<div class="about-text-pages">
 							<h4>Ноенохов Егор</h4>
 							<p>Руководитель видео группы</p>
 						</div>
 					</div>
-					<div class="about-info"> 
+					<div class="about-info">
 						<div class="about-photo"><img src="sardana.jpg" alt="" height="200px" width="200px"></div>
 						<div class="about-text-pages">
 							<h4>Кондратьева Сардана</h4>
 						</div>
 					</div>
-					<div class="about-info"> 
+					<div class="about-info">
 						<div class="about-photo"><img src="diana.jpg" alt="" height="200px" width="200px"></div>
 						<div class="about-text-pages">
 							<h4>Кириллова Диана</h4>
@@ -74,19 +51,19 @@
 					</div>
 				</div>
 				<div class="about-container-pages-bottom">
-					<div class="about-info"> 
+					<div class="about-info">
 					<div class="about-photo"><img src="duolan.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Петров Дуолан</h4>
 					</div>
 				</div>
-				<div class="about-info"> 
+				<div class="about-info">
 					<div class="about-photo"><img src="misha.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Попов Михаил</h4>
 					</div>
 				</div>
-				<div class="about-info"> 
+				<div class="about-info">
 					<div class="about-photo"><img src="michil.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Никитин Мичил</h4>
@@ -95,7 +72,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		</div>
 	</div>
 </body>

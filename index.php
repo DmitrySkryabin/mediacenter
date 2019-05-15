@@ -1,65 +1,43 @@
+<?php
+	include "config.php"
+ ?>
+
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Media center PPOS SVFU</title>
+	<meta charset="utf-8">
+	<title><?php echo $config['title'] ?></title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="static/style/style.css">
 </head>
-
 <header>
-	<div class="wrapper">
-		<div class="cap">
-			<div class="logo">
-				<a href="#"><img src="../images/logo.png" alt="logo" width="100px" height="100px"></a>	
-			</div>
-			<div class="logo-text">
-				<a href="#">
-				<h1>МЕДИА ЦЕНТР</h1>
-				<h3>ППОС СВФУ</h3></a>
-			</div>
-			<div class="menu">
-			<ul>
-				<li><a href="#">Домой</a> </li>
-				<li><a href="#">Блог</a></li>
-				<li><a href="#">Информация</a></li>
-			</ul>
-			</div>
-		</div>
-		<div class="img-block">
+<?php
+	include "header.php"
+ ?>
+ <div class="wrapper">
+	 <div class="img-block">
 			<h1>Мы ловим моменты</h1>
 		</div>
-	</div>
-	</header>
+ </div>
+</header>
 <body>
 	<div class="wrapper">
-		<div class="portfolio">
-			<div class="portfolio-up">
-				<div class="portfolio-up-text">
-					<h1>Портфолио</h1>
-					<p>Узнай о нас больше!</p>
-				</div>
-				<div class="portfolio-up-menu">
-					<a href="">Все</a>
-					<a href="../photos/photos.html">Фотографы</a>
-					<a href="../videos/videos.html">Видеоргафы</a>
-					<a href="">Дизайнеры</a>
-				</div>
-			</div>
-			<div class="portfolio-bottom">
-				<div class="img-container">
-					<div class="img-text"><img src="foto.png" alt="zaglushka" width="150px" height="150px"><p>Наши фотографии</p></div>
-					<div class="img-text"><img src="music.png" alt="zaglushka" width="150px" height="150px"><p>Наши видео работы</p></div>
-					<div class="img-text"><img src="safari.png" alt="zaglushka" width="150px" height="150px"><p>Новости нашей деятельности</p></div>
-					<div class="img-text"><img src="insta.png" alt="zaglushka" width="150px" height="150px"><p>Работы дизайнеров</p></div>
-				</div>
-			</div>
-		</div>
+		<?php
+			include "header_bottom.php"
+		 ?>
+		 <div class="portfolio-bottom">
+	     <div class="img-container">
+	       <div class="img-text"><img src="static/images/foto.png" alt="foto" width="150px" height="150px"><p>Наши фотографии</p></div>
+	       <div class="img-text"><img src="static/images/music.png" alt="works" width="150px" height="150px"><p>Наши видео работы</p></div>
+	       <div class="img-text"><img src="static/images/safari.png" alt="news" width="150px" height="150px"><p>Новости нашей деятельности</p></div>
+	       <div class="img-text"><img src="static/images/insta.png" alt="disign" width="150px" height="150px"><p>Работы дизайнеров</p></div>
+	     </div>
+	   </div>
 		<div class="about-us">
 			<h3>О нас</h3>
 			<div class="about-container">
-				<div class="about-info"> 
-					<div class="about-photo"><img src="arina.jpg" alt="" height="200px" width="200px"></div>
+				<div class="about-info">
+					<div class="about-photo"><img src="media/main/arina.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text">
 						<h4>Старцева Арина <br>Алексеевна</h4>
 						<p>Руководитель Медиа центра</p>
@@ -69,14 +47,14 @@
 					<div class="about-info-right-text">
 						<p>Медиа центр-это структурное подразделение профсоюзной первичной организации студентов Северо-Восточного Федерального университета им.М.К.Аммосова</p><br>
 						<p>Медиа центр-это творческая вспышка. Это фотографы,видеографы,корреспонденты и дизайнеры. Те люди, которые всегда находятся за кадром, чтобы кадр получился отлично.
-						</p><br>	
+						</p><br>
 						<p>В нас течет творчество,креатив и вдохновение. И мы бы хотели поделиться им с вами.</p>
 					</div>
 				</div>
 			</div>
 			<div class="about-footer">
 				<div class="about-footer-img">
-					<img src="logo_down.png" alt="mediacenter" height="180px" width="180px">
+					<img src="static/images/logo_down.png" alt="mediacenter" height="180px" width="180px">
 				</div>
 			</div>
 		</div>
@@ -90,7 +68,7 @@
 					<form action="" class="feedback-form">
 						<input type="text" class="feedback-input" placeholder="   Ваше имя">
 						<input type="email" class="feedback-input" placeholder="   Ваш e-mail"><br>
-						<textarea class="feedback-input-area" placeholder="Ваше сообщение"></textarea> 
+						<textarea class="feedback-input-area" placeholder="Ваше сообщение"></textarea>
 						<br>
 						<input type="submit" class="feedback-input-submit">
 					</form>
