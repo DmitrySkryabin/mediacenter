@@ -26,25 +26,30 @@
 		</div>
 		<div class="meating">
 			<h3>Знакомство</h3>
+			<div class="meating-text">
+        <h4> Видео группа</h4>
+        <p>Снимают вас</p>
+        <p>лохи</p>
+      </div>
 		</div>
 		<div class="about-us-pages">
 			<div class="about-container-pages">
 				<div class="about-container-pages-top">
 					<div class="about-info">
-						<div class="about-photo"><img src="egor.jpg" alt="" height="200px" width="200px"></div>
+						<div class="about-photo"><img src="../media/videos/egor.jpg" alt="" height="200px" width="200px"></div>
 						<div class="about-text-pages">
 							<h4>Ноенохов Егор</h4>
 							<p>Руководитель видео группы</p>
 						</div>
 					</div>
 					<div class="about-info">
-						<div class="about-photo"><img src="sardana.jpg" alt="" height="200px" width="200px"></div>
+						<div class="about-photo"><img src="../media/videos/sardana.jpg" alt="" height="200px" width="200px"></div>
 						<div class="about-text-pages">
 							<h4>Кондратьева Сардана</h4>
 						</div>
 					</div>
 					<div class="about-info">
-						<div class="about-photo"><img src="diana.jpg" alt="" height="200px" width="200px"></div>
+						<div class="about-photo"><img src="../media/videos/diana.jpg" alt="" height="200px" width="200px"></div>
 						<div class="about-text-pages">
 							<h4>Кириллова Диана</h4>
 						</div>
@@ -52,19 +57,19 @@
 				</div>
 				<div class="about-container-pages-bottom">
 					<div class="about-info">
-					<div class="about-photo"><img src="duolan.jpg" alt="" height="200px" width="200px"></div>
+					<div class="about-photo"><img src="../media/videos/duolan.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Петров Дуолан</h4>
 					</div>
 				</div>
 				<div class="about-info">
-					<div class="about-photo"><img src="misha.jpg" alt="" height="200px" width="200px"></div>
+					<div class="about-photo"><img src="../media/videos/misha.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Попов Михаил</h4>
 					</div>
 				</div>
 				<div class="about-info">
-					<div class="about-photo"><img src="michil.jpg" alt="" height="200px" width="200px"></div>
+					<div class="about-photo"><img src="../media/videos/michil.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Никитин Мичил</h4>
 					</div>

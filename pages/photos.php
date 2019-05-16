@@ -20,41 +20,50 @@
 		<?php
 			include "../header_bottom.php"
 		 ?>
-		<div class="photos">
-			<div class="w3-content" style="max-width:800px">
-			  <img class="mySlides" src="1.jpg" style="width:100%">
-			  <img class="mySlides" src="2.jpg" style="width:100%">
-			  <img class="mySlides" src="3.jpg" style="width:100%">
-			  <img class="mySlides" src="4.jpg" style="width:100%">
-			  <img class="mySlides" src="5.jpg" style="width:100%">
-			  <img class="mySlides" src="6.jpg" style="width:100%">
-			  <img class="mySlides" src="7.jpg" style="width:100%">
-			</div>
 
-			<div class="w3-center">
-			  <div class="w3-section">
-			    <button class="w3-button" onclick="plusDivs(-1)">Предыдущая</button>
-			    <button class="w3-button" onclick="plusDivs(1)">Следующая</button>
-			  </div>
-			  <div class="w3-buton-section">
-			  	  <button class="w3-button demo" onclick="currentDiv(1)">1</button>
-				  <button class="w3-button demo" onclick="currentDiv(2)">2</button>
-				  <button class="w3-button demo" onclick="currentDiv(3)">3</button>
-				  <button class="w3-button demo" onclick="currentDiv(4)">4</button>
-				  <button class="w3-button demo" onclick="currentDiv(5)">5</button>
-				  <button class="w3-button demo" onclick="currentDiv(6)">6</button>
-				  <button class="w3-button demo" onclick="currentDiv(7)">7</button>
-			  </div>
-			</div>
+		<div class="photos">
+			<?php
+				$i=1;
+				$j=1;
+			?>
+				<div class="w3-content" style="max-width:800px">
+					<?php
+						while ($i<8){
+							$img = "<img class=\"mySlides\" src=\"../media/photos/{$i}.jpg\" style=\"width:100%\">";
+							echo $img;
+							$i++;
+						};
+					?>
+				</div>
+				<div class="w3-center">
+				  <div class="w3-section">
+				    <button class="w3-button" onclick="plusDivs(-1)">Предыдущая</button>
+				    <button class="w3-button" onclick="plusDivs(1)">Следующая</button>
+				  </div>
+				  <div class="w3-buton-section">
+						<?php
+							while ($j<8){
+								$button = "<button class=\"w3-button demo\" onclick=\"currentDiv({$j})\">{$j}</button>";
+								echo $button;
+								$j++;
+							};
+						?>
+				  </div>
+				</div>
 		</div>
 		<div class="meating">
 			<h3>Знакомство</h3>
+			<div class="meating-text">
+        <h4> Фото группа</h4>
+        <p>Снимцт вас ночбю в подворотне</p>
+        <p>Их фоточки можно вылаживать в инстаграмм</p>
+      </div>
 		</div>
 		<div class="about-us-pages">
 			<div class="about-container-pages">
 				<div class="about-container-pages-top">
 					<div class="about-info">
-						<div class="about-photo"><img src="lena.jpg" alt="" height="200px" width="200px"></div>
+						<div class="about-photo"><img src="../media/photos/lena.jpg" alt="" height="200px" width="200px"></div>
 						<div class="about-text-pages">
 							<h4>Еремисова Лена</h4>
 							<p>Руководитель фото группы</p>
@@ -63,19 +72,19 @@
 				</div>
 				<div class="about-container-pages-bottom">
 					<div class="about-info">
-					<div class="about-photo"><img src="vlad.jpg" alt="" height="200px" width="200px"></div>
+					<div class="about-photo"><img src="../media/photos/vlad.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Лихоманов Владислав</h4>
 					</div>
 				</div>
 				<div class="about-info">
-					<div class="about-photo"><img src="erel.jpg" alt="" height="200px" width="200px"></div>
+					<div class="about-photo"><img src="../media/photos/erel.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Никитин Эрэл Бэргэн</h4>
 					</div>
 				</div>
 				<div class="about-info">
-					<div class="about-photo"><img src="masha.jpg" alt="" height="200px" width="200px"></div>
+					<div class="about-photo"><img src="../media/photos/masha.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Капитонова Мария</h4>
 					</div>
@@ -100,5 +109,5 @@
 		</div>
 	</div>
 </footer>
-<script src="../scripts/slider.js"></script>
+<script src="../static/scripts/slider.js"></script>
 </html>

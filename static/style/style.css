@@ -106,6 +106,11 @@ HTML{
 }
 .portfolio-bottom{
 	padding-bottom: 50px;
+  background: #fff;
+}
+.portfolio-bottom a{
+  color: #000;
+  text-decoration: none;
 }
 .img-container{
 	margin: auto;
@@ -310,7 +315,7 @@ HTML{
 	background: #1bbc9b;
 }
 .meating{
-	height: 211px;
+	height: 400px;
 	background: #fff;
 }
 .meating h3{
@@ -318,6 +323,23 @@ HTML{
 	text-align: center;
 	font-size: 30px;
 	padding-top: 80px;
+}
+.meating-text{
+  margin: auto;
+  width: 60%;
+  margin-top: 50px;
+  background: #1bbc9b;
+}
+.meating-text h4{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.meating-text p{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0 5px 0;
 }
 /*photos pages part*/
 .photos{
@@ -352,6 +374,7 @@ HTML{
 }
 .demo{
 	width: 30px;
+  margin-right: 4px;
 }
 .demo:hover{
 	background: grey;
@@ -360,4 +383,77 @@ HTML{
 .w3-red{
 	background: red;
 	color: #fff;
+}
+/*design page part*/
+.design{
+  height: 740px;
+	background: #1bbc9b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.design-photos{
+
+}
+/*news pages part*/
+.news-top{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #fff;
+}
+.news-top h3{
+  color: #fff;
+  background: #1bbc9b;
+  padding: 20px;
+  margin-left: 370px;
+  margin-right: 370px;
+  text-align: center;
+  font-size: 30px;
+}
+.news-body{
+  background: #1bbc9b;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.news-article{
+  background: #fff;
+  margin: 0 30px 30px 30px;
+  padding-top: 20px;
+}
+.news-article-image{
+  margin-left: 20px;
+  height: 400px;
+  width: 920px;
+}
+.news-article-image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Вписываем фотографию в область */
+}
+.news-article-title{
+  margin: 0 20px 20px 20px;
+}
+.news-article-title h4{
+  font-size: 30px;
+}
+.news-article-text{
+  margin: 20px;
+}
+.news-article-footer{
+  margin: 20px;
+  display: flex;
+  padding-bottom: 20px;
+}
+.news-article-footer p{
+  background: #1bbc9b;
+  margin-right: 30px;
+  padding: 8px;
+  color: #fff;
+}
+.news-article-footer a{
+  background: #1bbc9b;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+  margin-left: 380px;
 }

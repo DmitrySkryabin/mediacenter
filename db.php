@@ -4,11 +4,11 @@
     $config['db']['server'],
     $config['db']['username'],
     $config['db']['password'],
-    $config['db']['name']
+    $config['db']['name'],
   );
 
   if(!$connection){
-    echo "Ошибка подключения к базе данных, лбратитесь к вашему системному админимтратору";
+    echo "Ошибка подключения к базе данных, обратитесь к вашему системному админимтратору";
     echo mysqli_connect_error();
     exit();
   }

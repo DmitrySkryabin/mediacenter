@@ -29,8 +29,9 @@
 	     <div class="img-container">
 	       <div class="img-text"><img src="static/images/foto.png" alt="foto" width="150px" height="150px"><p>Наши фотографии</p></div>
 	       <div class="img-text"><img src="static/images/music.png" alt="works" width="150px" height="150px"><p>Наши видео работы</p></div>
-	       <div class="img-text"><img src="static/images/safari.png" alt="news" width="150px" height="150px"><p>Новости нашей деятельности</p></div>
 	       <div class="img-text"><img src="static/images/insta.png" alt="disign" width="150px" height="150px"><p>Работы дизайнеров</p></div>
+				 <div class="img-text">
+					 <a href="pages/news.php"><img src="static/images/safari.png" alt="news" width="150px" height="150px"><p>Новости</p></a></div>
 	     </div>
 	   </div>
 		<div class="about-us">
