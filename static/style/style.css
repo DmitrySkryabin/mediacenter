@@ -431,13 +431,22 @@ HTML{
   object-fit: cover; /* Вписываем фотографию в область */
 }
 .news-article-title{
+  display: flex;
   margin: 0 20px 20px 20px;
+}
+.news-article-title a{
+  padding: 8px;
+  background: #1bbc9b;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
 }
 .news-article-title h4{
   font-size: 30px;
 }
 .news-article-text{
   margin: 20px;
+  width: 920px;
 }
 .news-article-footer{
   margin: 20px;
@@ -456,4 +465,32 @@ HTML{
   text-decoration: none;
   padding: 8px;
   margin-left: 380px;
+}
+/*news page part*/
+.news-article-image-page{
+  margin-left: 20px;
+  width: 920px;
+}
+.news-article-image-page img{
+  width: 100%;
+}
+/*style of post text*/
+.citation{
+  font-size: 16px;
+  color: #3C3939;
+  margin: 10px 0 10px 0;
+  padding: 10px 20px 10px 50px;
+  font-style: italic;
+  background: #BBB4B4;
+}
+.citation q::before{
+  content: "\00ab";
+  font-size: 50px;
+  margin-right: 20px;
+}
+.citation q::after{
+  content: "\00bb";
+  font-size: 50px;
+  padding-top: -50px;
+  margin-left: 20px;
 }

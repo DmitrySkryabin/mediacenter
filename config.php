@@ -5,7 +5,7 @@
       'server'=>'localhost',
       'username'=>'root',
       'password'=>'',
-      'name'=>'mediacenter'
+      'name'=>'mediacenter',
     )
   );
 

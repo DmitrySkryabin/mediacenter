@@ -18,31 +18,28 @@
 </header>
 <body>
 	<div class="wrapper">
-    <div class="news-top">
-      <h3>НОВОСТИ</h3>
-    </div>
     <div class="news-body">
       <?php
-        $news_article = mysqli_query($connection,"SELECT * FROM `news_page` ORDER BY -`date`");
+        $news_article = mysqli_query($connection,"SELECT * FROM `news_page` WHERE `id` = " . (int)$_GET['id']);
        ?>
        <?php
           while($news = mysqli_fetch_assoc($news_article))
           {
             ?>
           <div class="news-article">
-            <figure class="news-article-image">
-              <img src="<?php echo $news['image']; ?>" alt="" class="news-article-image-image">
-            </figure>
             <div class="news-article-title">
+              <a href="<?php echo $_GET['next'] ?>">Назад</a>
               <h4><?php echo $news['title']; ?></h4>
             </div>
+            <figure class="news-article-image-page">
+              <img src="<?php echo $news['image']; ?>" alt="" class="news-article-image-image">
+            </figure>
             <div class="news-article-text">
-                <p><?php echo mb_substr($news['text'], 0, 400, 'utf-8'); ?>...</p>
+              <p><?php echo $news['text']; ?></p>
             </div>
             <div class="news-article-footer">
               <p>Опубликовано: <span><?php echo $news['date']; ?></span> </p>
               <p>Просмотров: <span><?php echo $news['views']; ?></span> </p>
-              <a href="news_page.php?id=<?php echo $news['id'] ?>&next=news.php">Читать далее</a>
             </div>
           </div>
           <?php
