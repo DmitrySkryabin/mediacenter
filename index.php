@@ -14,6 +14,8 @@
 <?php
 	include "header.php"
  ?>
+ <div class="padding-top">
+ </div>
  <div class="wrapper">
 	 <div class="img-block">
 			<h1>Мы ловим моменты</h1>

@@ -17,6 +17,8 @@
 	 ?>
 </header>
 <body>
+  <div class="padding-top">
+  </div>
 	<div class="wrapper">
     <div class="news-top">
       <h3>НОВОСТИ</h3>

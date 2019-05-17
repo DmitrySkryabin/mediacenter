@@ -5,13 +5,20 @@
 }
 HTML{
 	font-family: 'Roboto', sans-serif;
-	background: #ff5;
+	background: #E3E3E3;
+  /*background: url("../../media/photos/3.jpg") 100% 100% no-repeat;
+  background-size: cover;*/
 }
 .wrapper{
 	width: 1020px;
 	margin: auto;
 }
+.padding-top{
+  padding-top: 92px;
+}
 .cap{
+  position: fixed;
+  width: 1020px;
 	height: 92px;
 	display: flex;
 	background: #fff;
@@ -59,6 +66,101 @@ HTML{
 .menu ul{
 	list-style: none;
 	display: flex;
+}
+/*modal part*/
+.modal-top{
+  display: flex;
+  padding-top: 20px;
+  padding-left: 100px;
+}
+.modal-top a{
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-top: -14px;
+  margin-left: 80px;
+  margin-bottom: 40px;
+}
+.modal-top h3{
+  color: #fff;
+  font-size: 30px;
+}
+.modalbackground{
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: rgba(0,0,0,0.5);
+  z-index:100;
+  opacity:0;
+  pointer-events: none;
+}
+.modalbackground:target{
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalwindow{
+	width: 100%;
+	max-width: 400px;
+	margin: 10% auto;
+	background: #1bbc9b;
+}
+.modalwindow h3{
+  padding: 0;
+  margin: 0;
+}
+.modalwindow p{
+  padding: 0;
+  margin: 4% 0 8% 0;
+}
+
+.modal-button{
+  display: block;
+  color: #fff;
+  font-size: 25px;
+  background: #1bbc9b;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+}
+.modal-form{
+  background: #fff;
+  padding: 10px;
+}
+.form-label{
+  font-size: 20px;
+  margin-left: 4px;
+}
+.modal-button-input{
+  border: 2px solid #cccccc;
+	height: 40px;
+	margin-right: 20px;
+	width: 360px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 3px;
+	padding-left: 10px;
+}
+.modal-button-vvod{
+  padding-top: 10px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  width: 374px;
+  margin-left: 3px;
+  color: #fff;
+  font-size: 25px;
+  background: #1bbc9b;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+.modal-button-vvod:hover{
+  background: #47a;
+}
+.modal-button:hover{
+background: #47a;
 }
 .img-block{
 	height: 460px;

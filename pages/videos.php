@@ -17,6 +17,8 @@
  ?>
 </header>
 <body>
+	<div class="padding-top">
+	</div>
 	<div class="wrapper">
 		<?php
 			include "../header_bottom.php"
