@@ -1,3 +1,24 @@
+
+<?php
+	if (isset($_POST['username']) && isset($_POST['password'])){
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+
+		$query = "SELECT * FROM `users` WHERE `username`='$username' and `password`='$password'";
+		$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+		$count = mysqli_num_rows($result);
+
+		if($count == 1){
+			$_SESSION['username'] = $username;
+		}else{
+			$ems = "Ошибка";
+			echo $ems;
+		}
+	}
+ ?>
+
+
+
 <div class="wrapper">
 	<div class="cap">
 		<div class="logo">
@@ -14,12 +35,10 @@
 			<li><a href="/mediacenter/pages/news.php">Новости</a></li>
 			<?php
 				if(isset($_SESSION['username'])){
-					echo "avtorizovan";
 			 ?>
-			 	<li><a href="logout.php">Выйти(<?php echo $_SESSION['username']; ?>)</a></li>
+			 	<li><a href="/mediacenter/logout.php?nextlogout=<?php echo $_SERVER["REQUEST_URI"];?>">Выйти (<?php echo $_SESSION['username']; ?>)</a></li>
 			<?php
 				}else{
-					echo "lol";
 			 ?>
 			 	<li><a href="#auth">Авторизация</a></li>
 			 <?php
@@ -35,34 +54,15 @@
 				<a href="" class="modal-button">&#215;</a>
 			</div>
 			<div class="modal-form">
-				<form class="" action="" method="post">
+				<form class="" action="?next=<?php echo $_SERVER["REQUEST_URI"]; ?>" method="post">
 					<label for="login" class="form-label">Логин:</label>
 					<input type="login" class="modal-button-input" name="username" value="" placeholder="Логин">
 					<label for="login" class="form-label">Пароль:</label>
 					<input type="password" class="modal-button-input" name="password" value="" placeholder="Пароль">
 					<input type="submit" class="modal-button-vvod" name="login-button" value="Войти">
+					<label for="" class="form-error"><?php if($ems){ echo $ems; } ?></label>
 				</form>
 			</div>
 		</div>
 	</div>
-
 </div>
-<?php
-	session_start();
-
-	if (isset($_POST['username']) && isset($_POST['password'])){
-		$username = $_POST['username'];
-		$password = $_POST['password'];
-
-		$query = "SELECT * FROM `users` WHERE `username`='$username' and `password`='$password'";
-		$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
-		$count = mysqli_num_rows($result);
-		echo $result;
-
-		if($count == 1){
-			$_SESSION['username'] = $username;
-		}else{
-			$ems = "Ошибка";
-		}
-	}
- ?>
