@@ -36,7 +36,7 @@
 			<?php
 				if(isset($_SESSION['username'])){
 			 ?>
-			 	<li><a href="/mediacenter/logout.php?nextlogout=<?php echo $_SERVER["REQUEST_URI"];?>">Выйти (<?php echo $_SESSION['username']; ?>)</a></li>
+			 	<li><a href="/mediacenter/logout.php?nextlogout=<?php echo $_SERVER["REQUEST_URI"];?>" style="background: #1bbc9b; color: #fff;">Выйти (<?php echo $_SESSION['username']; ?>)</a></li>
 			<?php
 				}else{
 			 ?>
