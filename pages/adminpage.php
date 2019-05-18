@@ -20,36 +20,57 @@
   <div class="padding-top">
   </div>
 	<div class="wrapper">
-    <div class="news-top">
+    <div class="admin-page-top">
       <h3>Добро пожаловать! <?php echo $_SESSION['username'] ?></h3>
+      <a href="#">Добавить новость</a>
     </div>
     <div class="news-body">
       <?php
         $news_article = mysqli_query($connection,"SELECT * FROM `news_page` ORDER BY -`date`");
+        $i=1;
        ?>
+       <div class="admin-table">
+         <table>
+           <caption>Список новостей</caption><!--
+           <div class="">
+             <input type="checkbox" name="" value="" class="all">
+             <a href="#" class="button">Удалить</a>
+           </div>-->
+           <tr>
+             <th>
+               <div class="admin-table-delete">
+                 <div class="admin-table-delete-checkbox">
+                 <input type="checkbox" name="" value="" class="all">
+                 </div>
+                 <div class="admin-table-delete-url">
+                   <a href="#">Удалить</a>
+                 </div>
+               </div>
+              </th>
+             <th style="width: 5%;">№</th>
+             <th style="width: 60%;">Заголовок</th>
+             <th style="width: 10%;">Дата публикации</th>
+             <th style="width: 10%;">Показы</th>
+             <th style="width: 10%;"></th>
+           </tr>
        <?php
           while($news = mysqli_fetch_assoc($news_article))
           {
             ?>
-          <div class="news-article">
-            <figure class="news-article-image">
-              <img src="<?php echo $news['image']; ?>" alt="" class="news-article-image-image">
-            </figure>
-            <div class="news-article-title">
-              <h4><?php echo $news['title']; ?></h4>
-            </div>
-            <div class="news-article-text">
-                <p><?php echo mb_substr($news['text'], 0, 400, 'utf-8'); ?>...</p>
-            </div>
-            <div class="news-article-footer">
-              <p>Опубликовано: <span><?php echo $news['date']; ?></span> </p>
-              <p>Просмотров: <span><?php echo $news['views']; ?></span> </p>
-              <a href="news_page.php?id=<?php echo $news['id'] ?>&next=news.php">Читать далее</a>
-            </div>
-          </div>
+            <tr>
+              <td> <input type="checkbox" name="" value="" class="one"> </td>
+              <td><?php echo $i; ?></td>
+              <td> <a href="#" class="a-tr"> <?php  echo $news['title']?> </a></td>
+              <td><?php  echo $news['date']?></td>
+              <td><?php  echo $news['views']?></td>
+              <td> <a href="#" class="button">Удалить</a> </td>
+            </tr>
           <?php
+            $i++;
               }
            ?>
+           </table>
+        </div>
     </div>
   </div>
 <footer>
@@ -70,7 +91,9 @@
 <?php
   }
   else{
-    header('HTTP/1.0 403 Forbidden');
-    echo "Доступ воспрещен";
+    ?><link rel="stylesheet" href="../static/style/style.css">
+    <?php
+        header('HTTP/1.0 403 Forbidden');
+        include "../permission_denied.php";
   }
  ?>

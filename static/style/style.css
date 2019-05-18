@@ -596,3 +596,107 @@ background: #47a;
   padding-top: -50px;
   margin-left: 20px;
 }
+/*admin pages part*/
+.admin-page-top{
+  background: #1bbc9b;
+  padding-left: 32px;
+  color: #fff;
+}
+.admin-page-top a{
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 12px;
+  float: right;
+  margin-right: 23px;
+  margin-top: -32px;
+}
+.admin-page-top a:hover{
+  background: #D4D4D4;
+}
+.admin-page-top h3{
+  padding-top: 30px;
+}
+.admin-table{
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #fff;
+  min-height: 62.8vh;
+}
+.admin-table caption{
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.admin-table table{
+  border: 1px solid grey;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 2px;
+}
+.admin-table tr{
+  height: 50px;
+}
+.admin-table tr:hover{
+  background: #D4D4D4;
+}
+.admin-table th{
+  border: 1px solid grey;
+  background: #D4D4D4;
+}
+.admin-table td{
+  border: 1px solid grey;
+}
+.a-tr{
+  text-decoration: none;
+  color: #000;
+}
+.a-tr:hover{
+  color: #fff;
+}
+.button{
+  background: #1bbc9b;
+  padding: 10px;
+  color: #fff;
+  border: 1px solid #1bbc9b;
+  text-decoration: none;
+}
+.button:hover{
+  background: #fff;
+  color: #000;
+  border: 1px solid grey;
+}
+.one, .all{
+  transform:scale(1.4);
+}
+.one:hover{
+
+}
+.admin-table-delete{
+  display: flex;
+  position: absolute;
+}
+.admin-table-delete-checkbox{
+  margin-left: 5.5%;
+  padding: 10px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  margin-top: -18px;
+}
+.admin-table-delete-url{
+  margin-top: -10px;
+  display: none;
+}
+.admin-table-delete-url a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #1bbc9b;
+}
+.admin-table-delete-checkbox:hover .admin-table-delete-url{
+  background: #1bbc9b;
+  display: block;
+  https://www.hostinger.ru/rukovodstva/kak-sozdat-vipadauyshee-menu-css
+}
