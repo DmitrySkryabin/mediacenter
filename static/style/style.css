@@ -669,9 +669,6 @@ background: #47a;
 .one, .all{
   transform:scale(1.4);
 }
-.one:hover{
-
-}
 .admin-table-delete{
   display: flex;
   position: absolute;
@@ -680,7 +677,7 @@ background: #47a;
   margin-left: 5.5%;
   padding: 10px;
   padding-bottom: 6px;
-  padding-left: 12px;
+  padding-left: 16px;
   margin-top: -18px;
 }
 .admin-table-delete-url{
@@ -694,9 +691,4 @@ background: #47a;
   padding-top: 8px;
   padding-bottom: 8px;
   background: #1bbc9b;
-}
-.admin-table-delete-checkbox:hover .admin-table-delete-url{
-  background: #1bbc9b;
-  display: block;
-  https://www.hostinger.ru/rukovodstva/kak-sozdat-vipadauyshee-menu-css
 }

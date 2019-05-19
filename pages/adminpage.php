@@ -22,7 +22,7 @@
 	<div class="wrapper">
     <div class="admin-page-top">
       <h3>Добро пожаловать! <?php echo $_SESSION['username'] ?></h3>
-      <a href="#">Добавить новость</a>
+      <a href="news_add_page.php">Добавить новость</a>
     </div>
     <div class="news-body">
       <?php
@@ -31,18 +31,14 @@
        ?>
        <div class="admin-table">
          <table>
-           <caption>Список новостей</caption><!--
-           <div class="">
-             <input type="checkbox" name="" value="" class="all">
-             <a href="#" class="button">Удалить</a>
-           </div>-->
+           <caption>Список новостей</caption>
            <tr>
              <th>
                <div class="admin-table-delete">
-                 <div class="admin-table-delete-checkbox">
+                 <div class="admin-table-delete-checkbox" onmouseover="mousechange()" onmouseout="mousenotchange()">
                  <input type="checkbox" name="" value="" class="all">
                  </div>
-                 <div class="admin-table-delete-url">
+                 <div class="admin-table-delete-url" onmouseover="mousechange()" onmouseout="mousenotchange()">
                    <a href="#">Удалить</a>
                  </div>
                </div>
@@ -85,6 +81,7 @@
 			</div>
 		</div>
 	</div>
+</body>
 </footer>
 <script src="../static/scripts/slider.js"></script>
 </html>
@@ -97,3 +94,19 @@
         include "../permission_denied.php";
   }
  ?>
+ <script>
+   function mousechange(){
+     query = document.querySelector(".admin-table-delete-url");
+     query.style.display = "block";
+     query = document.querySelector(".admin-table-delete-checkbox");
+     query.style.background = "#1bbc9b";
+     query.style.paddingLeft = "12px";
+   }
+   function mousenotchange(){
+     query = document.querySelector(".admin-table-delete-url");
+     query.style.display = "none";
+     query = document.querySelector(".admin-table-delete-checkbox");
+     query.style.background = "#D4D4D4";
+     query.style.paddingLeft = "16px";
+   }
+ </script>

@@ -38,7 +38,7 @@
 			 ?>
 			 	<style media="screen">
 			 		.menu{
-						margin: 33px 0 0 160px;
+						margin: 33px 0 0 174px;
 					}
 			 	</style>
 			 	<li><a href="/mediacenter/pages/adminpage.php">Админка</a></li>

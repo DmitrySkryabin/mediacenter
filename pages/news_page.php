@@ -1,6 +1,6 @@
 <?php
-  header('Content-Type: text/html; charset=utf-8');
-	include "../config.php"
+	include "../config.php";
+  mysqli_query($connection, "UPDATE `news_page` SET `views` = `views` + 1 WHERE `id`=" . (int)$_GET['id']);
  ?>
 <!doctype html>
 <html>
