@@ -28,7 +28,7 @@
     </div>
       <div class="add-container">
         <div class="add-form">
-          <form class="" action="" method="post">
+          <form class="" action="/mediacenter/pagers/news_add_page.php" method="post">
             <label for="title">Заголовок статьи:</label>
             <input type="text" name="title" value="" placeholder="Заголовок статьи">
             <label for="image">Картинка статьи (бета версия пишите название картинки):</label>
@@ -43,7 +43,7 @@
           				<a href="" class="modal-button modal-button-verification">&#215;</a>
           			</div>
           			<div class="modal-form modal-form-verification">
-          			     <p>Проверьте <strong>правильность всего</strong>,
+          			     <p>Проверьте <strong>правильность текста</strong>,
                      и если нужно <strong>исправьте</strong>, после того как новость будет
                      опуб-ликована, её могут увидеть некоторое число людей
                      прежде чем новость будет отредактиро-вана</p>
@@ -77,7 +77,7 @@
       $title = $_POST['title'];
       $image_url = "../media/news/" . $_POST['image'];
       $text = $_POST['text-news'];
-      $query = "INSERT INTO `news_page` (title, image, text) VALUES ('$title', '$image_url', '$text')";
+      $query = "INSERT INTO `news_page` (title, image, text, active) VALUES ('$title', '$image_url', '$text', '1')";
       if (mysqli_query($connection, $query)) {
         $msg="true";
         } else {
