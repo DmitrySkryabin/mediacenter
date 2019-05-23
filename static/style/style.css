@@ -6,12 +6,12 @@
 HTML{
 	font-family: 'Roboto', sans-serif;
 	background: #E3E3E3;
-  zoom: 1.1; 
+  zoom: 1.1;
   /*background: url("../../media/photos/3.jpg") 100% 100% no-repeat;
   background-size: cover;*/
 }
 .wrapper{
-	width: 1020px;
+	width: 100%;
 	margin: auto;
 }
 .padding-top{

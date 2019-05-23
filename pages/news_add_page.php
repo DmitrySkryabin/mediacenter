@@ -18,17 +18,32 @@
 	 ?>
 </header>
 <body>
+  <?php
+    if($_POST){
+      if(isset($_POST['title']) && isset($_POST['image']) && isset($_POST['text-news'])){
+        $title = $_POST['title'];
+        $image_url = "../media/news/" . $_POST['image'];
+        $text = $_POST['text-news'];
+        $date = date('Y-m-d');
+        $query = "INSERT INTO `news_page` (title, image, text, active, date) VALUES ('$title', '$image_url', '$text', '1', '$date')";
+        if (mysqli_query($connection, $query)) {
+          header("Location: adminpage.php");
+          } else {
+                $msg = "Новость не опубликована " . $query . "<br>" . mysqli_error($connection);
+          }
+      }
+    }
+   ?>
   <div class="padding-top">
   </div>
 	<div class="wrapper">
     <div class="admin-page-top">
       <h3>Добро пожаловать! <?php echo $_SESSION['username'] ?></h3>
       <p>Добавление новости</p>
-      <?php echo $msg ?>
     </div>
       <div class="add-container">
         <div class="add-form">
-          <form class="" action="/mediacenter/pagers/news_add_page.php" method="post">
+          <form class="" action="/mediacenter/pages/news_add_page.php" method="post">
             <label for="title">Заголовок статьи:</label>
             <input type="text" name="title" value="" placeholder="Заголовок статьи">
             <label for="image">Картинка статьи (бета версия пишите название картинки):</label>
@@ -72,19 +87,6 @@
 <script src="../static/scripts/slider.js"></script>
 </html>
 <?php
-  if($_POST){
-    if(isset($_POST['title']) && isset($_POST['image']) && isset($_POST['text-news'])){
-      $title = $_POST['title'];
-      $image_url = "../media/news/" . $_POST['image'];
-      $text = $_POST['text-news'];
-      $query = "INSERT INTO `news_page` (title, image, text, active) VALUES ('$title', '$image_url', '$text', '1')";
-      if (mysqli_query($connection, $query)) {
-        $msg="true";
-        } else {
-              $msg = "Новость не опубликована " . $query . "<br>" . mysqli_error($connection);
-        }
-    }
-  }
   }
   else{
     ?><link rel="stylesheet" href="../static/style/style.css">
