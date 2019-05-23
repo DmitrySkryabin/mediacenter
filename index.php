@@ -7,7 +7,7 @@
 <head>
 	<meta charset="utf-8">
 	<title><?php echo $config['title'] ?></title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="static/style/style.css">
 </head>
 <header>
@@ -18,7 +18,9 @@
  </div>
  <div class="wrapper">
 	 <div class="img-block">
-			<h1>Мы ловим моменты</h1>
+		 <h1>Мы ловим моменты</h1>
+		 <div class="img-block-img">
+		 </div>
 		</div>
  </div>
 </header>

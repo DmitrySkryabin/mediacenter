@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<title><?php echo $config['title'] ?></title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../static/style/style.css">
 </head>
 

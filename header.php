@@ -22,13 +22,15 @@
 
 <div class="wrapper">
 	<div class="cap">
-		<div class="logo">
-			<a href="/mediacenter"><img src="/mediacenter/static/images/logo.png" alt="logo" width="100px" height="100px"></a>
-		</div>
-		<div class="logo-text">
-			<a href="/mediacenter">
-			<h1>МЕДИА ЦЕНТР</h1>
-			<h3>ППОС СВФУ</h3></a>
+		<div class="logo-container">
+			<div class="logo">
+				<a href="/mediacenter"><img src="/mediacenter/static/images/logo.png" alt="logo" width="100px" height="100px"></a>
+			</div>
+			<div class="logo-text">
+				<a href="/mediacenter">
+				<h1>МЕДИА ЦЕНТР</h1>
+				<h3>ППОС СВФУ</h3></a>
+			</div>
 		</div>
 		<div class="menu">
 		<ul>
@@ -37,11 +39,6 @@
 			<?php
 				if(isset($_SESSION['username'])){
 			 ?>
-			 	<style media="screen">
-			 		.menu{
-						margin: 33px 0 0 174px;
-					}
-			 	</style>
 			 	<li><a href="/mediacenter/pages/adminpage.php">Админка</a></li>
 			 	<li><a href="/mediacenter/logout.php?nextlogout=<?php echo $_SERVER["REQUEST_URI"];?>" style="background: #1bbc9b; color: #fff;">Выйти (<?php echo $_SESSION['username']; ?>)</a></li>
 			<?php
