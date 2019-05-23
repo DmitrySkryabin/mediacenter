@@ -1,5 +1,6 @@
 
 <?php
+	$ems="";
 	if (isset($_POST['username']) && isset($_POST['password'])){
 		$username = $_POST['username'];
 		$password = $_POST['password'];
@@ -7,12 +8,12 @@
 		$query = "SELECT * FROM `users` WHERE `username`='$username' and `password`='$password'";
 		$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 		$count = mysqli_num_rows($result);
-
+		$request_url = str_replace("#auth", "", $_POST['request_url']);
 		if($count == 1){
 			$_SESSION['username'] = $username;
+			header('Location:' . $request_url);
 		}else{
-			$ems = "Ошибка";
-			echo $ems;
+			$ems = "Неверный логин или пароль";
 		}
 	}
  ?>
@@ -65,8 +66,9 @@
 					<input type="login" class="modal-button-input" name="username" value="" placeholder="Логин">
 					<label for="login" class="form-label">Пароль:</label>
 					<input type="password" class="modal-button-input" name="password" value="" placeholder="Пароль">
-					<input type="submit" class="modal-button-vvod" name="login-button" value="Войти">
 					<label for="" class="form-error"><?php if($ems){ echo $ems; } ?></label>
+					<input type="text" name="request_url" value="<?php echo $_SERVER["REQUEST_URI"]; ?>" style="display: none;">
+					<input type="submit" class="modal-button-vvod" name="login-button" value="Войти">
 				</form>
 			</div>
 		</div>

@@ -6,6 +6,7 @@
 HTML{
 	font-family: 'Roboto', sans-serif;
 	background: #E3E3E3;
+  zoom: 1.1; 
   /*background: url("../../media/photos/3.jpg") 100% 100% no-repeat;
   background-size: cover;*/
 }
@@ -18,6 +19,7 @@ HTML{
 }
 .cap{
   position: fixed;
+  z-index: 1;
   width: 1020px;
 	height: 92px;
 	display: flex;
@@ -66,6 +68,9 @@ HTML{
 .menu ul{
 	list-style: none;
 	display: flex;
+}
+.form-error{
+  color: red;
 }
 /*modal part*/
 .modal-top{
@@ -617,6 +622,11 @@ background: #47a;
 .admin-page-top h3{
   padding-top: 30px;
 }
+.admin-page-top p{
+  padding-top: 10px;
+  font-size:16px;
+  padding-bottom: 10px;
+}
 .admin-table{
   padding-left: 20px;
   padding-right: 20px;
@@ -691,4 +701,65 @@ background: #47a;
   padding-top: 8px;
   padding-bottom: 8px;
   background: #1bbc9b;
+}
+/*news add page part*/
+.add-container{
+  background: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.add-form{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.add-form label{
+  margin-top: 10px;
+}
+.add-form input[type="text"]{
+  margin-top: 10px;
+  width: 98.5%;
+  border: 1px solid
+  border: 2px solid #cccccc;
+	height: 40px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.add-form textarea{
+  margin-top: 10px;
+  width: 98.5%;
+  border: 1px solid
+  border: 2px solid #cccccc;
+	height: 200px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.add-form input[type="submit"]{
+  float: right;
+  font-size: 16px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+}
+.add-form a{
+  float: right;
+  font-size: 16px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+}
+.modal-top-verification a{
+  margin-left: 70px;
+  padding-bottom: -4px;
+  font-size: 25px;
+}
+.modal-form-verification{
+  height: 200px;
+}
+.modal-top-verification h3{
+  font-size: 27px;
+  padding-left: 8px;
+}
+.modal-form-verification p{
+  font-size: 16px;
+  padding-left: 6px;
+  padding-right: 6px;
 }

@@ -68,10 +68,10 @@
 			</div>
 			<div class="feedback-content">
 				<div class="feedback-content-left">
-					<form action="" class="feedback-form">
-						<input type="text" class="feedback-input" placeholder="   Ваше имя">
-						<input type="email" class="feedback-input" placeholder="   Ваш e-mail"><br>
-						<textarea class="feedback-input-area" placeholder="Ваше сообщение"></textarea>
+					<form action="#feedback-form" class="feedback-form" id="feedback-form">
+						<input type="text" name="name" class="feedback-input" placeholder="Ваше имя">
+						<input type="email" name="email" class="feedback-input" placeholder="Ваш e-mail"><br>
+						<textarea class="feedback-input-area" name="text" placeholder="Ваше сообщение"></textarea>
 						<br>
 						<input type="submit" class="feedback-input-submit">
 					</form>
@@ -86,6 +86,31 @@
 		</div>
 	</div>
 </body>
+<?php
+	if($_POST){
+		if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['text'])){
+			$name = $_POST['name'];
+			$email = $_POST['email'];
+			$text = $_POST['text'];
+			$name = htmlspecialchars($name);
+			$email = htmlspecialchars($email);
+			$text = htmlspecialchars($text);
+			$name = urldecode($name);
+			$email = urldecode($email);
+			$text = urldecode($text);
+			$name = trim($name);
+			$email = trim($email);
+			$text = trim($text);
+			//echo $fio;
+			//echo "<br>";
+			//echo $email;
+			if (mail("skryabinmitya@mail.ru", "Заявка с сайта", "Имя:".$name.". E-mail: ".$email . "Текст" . $text ,"From: example2@mail.ru \r\n")){
+	    	echo "сообщение успешно отправлено";
+			} else {
+			    echo "при отправке сообщения возникли ошибки";
+			}
+	}
+ ?>
 <footer>
 	<div class="wrapper">
 		<div class="footer-content">

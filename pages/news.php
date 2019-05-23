@@ -1,5 +1,4 @@
 <?php
-  header('Content-Type: text/html; charset=utf-8');
 	include "../config.php"
  ?>
 <!doctype html>
@@ -25,7 +24,7 @@
     </div>
     <div class="news-body">
       <?php
-        $news_article = mysqli_query($connection,"SELECT * FROM `news_page` ORDER BY -`date`");
+        $news_article = mysqli_query($connection,"SELECT * FROM `news_page` WHERE `active`=1 ORDER BY -`date`");
        ?>
        <?php
           while($news = mysqli_fetch_assoc($news_article))
