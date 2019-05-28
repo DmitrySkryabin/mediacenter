@@ -65,7 +65,7 @@
 		<div class="about-us-pages">
 			<div class="about-container-pages">
 				<div class="about-container-pages-top">
-					<div class="about-info">
+					<div class="about-info about-info-pages">
 						<div class="about-photo"><img src="../media/photos/lena.jpg" alt="" height="200px" width="200px"></div>
 						<div class="about-text-pages">
 							<h4>Еремисова Лена</h4>
@@ -74,19 +74,19 @@
 					</div>
 				</div>
 				<div class="about-container-pages-bottom">
-					<div class="about-info">
+					<div class="about-info about-info-pages">
 					<div class="about-photo"><img src="../media/photos/vlad.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Лихоманов Владислав</h4>
 					</div>
 				</div>
-				<div class="about-info">
+				<div class="about-info about-info-pages">
 					<div class="about-photo"><img src="../media/photos/erel.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Никитин Эрэл Бэргэн</h4>
 					</div>
 				</div>
-				<div class="about-info">
+				<div class="about-info about-info-pages">
 					<div class="about-photo"><img src="../media/photos/masha.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Капитонова Мария</h4>
@@ -99,18 +99,8 @@
 		</div>
 	</div>
 </body>
-<footer>
-	<div class="wrapper">
-		<div class="footer-content">
-			<div class="footer-text">
-				<p>2019</p>
-			<p>@DanaRyui</p>
-			</div>
-			<div class="up-button">
-				<a href="#">&#9650</a>
-			</div>
-		</div>
-	</div>
-</footer>
+<?php
+ include "../footer.php";
+ ?>
 <script src="../static/scripts/slider.js"></script>
 </html>

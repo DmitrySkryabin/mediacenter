@@ -30,7 +30,7 @@
             ?>
           <div class="news-article">
             <div class="news-article-title">
-              <a href="<?php echo $_GET['next'] ?>">Назад</a>
+              <a href="<?php echo $_GET['next'];?>#<?php echo $_GET['nextid']; ?>">Назад</a>
               <h4><?php echo $news['title']; ?></h4>
             </div>
             <figure class="news-article-image-page">
@@ -49,18 +49,8 @@
            ?>
     </div>
   </div>
-<footer>
-	<div class="wrapper">
-		<div class="footer-content">
-			<div class="footer-text">
-				<p>2019</p>
-			<p>@DanaRyui</p>
-			</div>
-			<div class="up-button">
-				<a href="#">&#9650</a>
-			</div>
-		</div>
-	</div>
-</footer>
+	<?php
+ 	include "../footer.php";
+   ?>
 <script src="../static/scripts/slider.js"></script>
 </html>

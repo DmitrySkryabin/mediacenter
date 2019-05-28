@@ -29,7 +29,7 @@ HTML{
   align-items: center;
 }
 .logo{
-	padding: 0px 8px 8px 30px;
+	padding: 0px 8px 8px 0px;
   margin-top: 8px;
 }
 .logo-text{
@@ -240,7 +240,7 @@ background: #47a;
 	text-align: center;
 }
 .img-container p{
-	font-size: 14px;
+	font-size: 16px;
 	margin-top: 5px;
 	margin-bottom: 20px;
 }
@@ -259,10 +259,16 @@ background: #47a;
 .about-container{
 	display: flex;
 	justify-content: center;
-	height: 450px;
+	height: 450px;x
 }
 .about-info{
-	padding: 0 25px;
+	margin-right: 25px;
+}
+.about-info-pages{
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .about-photo{
 	margin: 0px;
@@ -270,6 +276,7 @@ background: #47a;
 	height: 200px;
 }
 .about-text{
+  position: relative;
 	padding-top: 0px;
 	margin-top: 0px;
 	text-align: center;
@@ -296,7 +303,7 @@ background: #47a;
 	height: 380px;
 }
 .about-info-right-text{
-	padding: 50px 20px 50px 20px;
+	padding: 20px 20px 50px 20px;
 	font-size: 20px;
 	color: #444444;
 }
@@ -376,14 +383,35 @@ background: #47a;
 .footer-content{
 	background: grey;
 	color: #fff;
-	height: 100px;
+	height: 500px;
 	color: white;
 	padding-top: 40px;
 	display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .footer-content p{
-	padding-left: 30px;
+	padding-left: 10px;
+  padding-top: 10px;
+}
+.footer-text{
+  width: 25%;
+}
+.footer-text-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-text-center{
+  display: flex;
+  justify-content: center;
+}
+.footer-text-center a{
+  margin: 0px 10px;
+  color: #fff;
+  height: 40px;
+}
+.footer-text-center a:hover{
+  color: #1bbc9b;
 }
 .up-button{
 }
@@ -407,9 +435,17 @@ background: #47a;
 	padding-bottom: 100px;
 	padding-top: 150px;
 }
+.about-container-pages-top-videos{
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
 .about-container-pages-bottom{
+  width: 60%;
+  margin: auto;
 	display: flex;
-	justify-content: center;
+  justify-content: space-around;
 	padding-bottom: 150px;
 }
 .about-text-pages{
@@ -540,12 +576,22 @@ background: #47a;
   text-align: center;
   font-size: 30px;
 }
+.news-content{
+  display: flex;
+}
 .news-body{
+  width: 100%;
   background: #1bbc9b;
   padding-top: 30px;
   padding-bottom: 30px;
+  display: flex;
+}
+.news-body-left{
+  margin-left: 5%;
+  width: 60%;
 }
 .news-article{
+  width: 100%;
   background: #fff;
   margin: 0 30px 30px 30px;
   padding-top: 20px;
@@ -553,7 +599,7 @@ background: #47a;
 .news-article-image{
   margin-left: 20px;
   height: 400px;
-  width: 920px;
+  width: 94%;
 }
 .news-article-image img{
   height: 100%;
@@ -576,26 +622,58 @@ background: #47a;
 }
 .news-article-text{
   margin: 20px;
-  width: 920px;
+  width: 94%;
 }
 .news-article-footer{
   margin: 20px;
   display: flex;
+  justify-content: space-between;
   padding-bottom: 20px;
+}
+.news-article-footer-l{
+  display: flex;
 }
 .news-article-footer p{
   background: #1bbc9b;
-  margin-right: 30px;
   padding: 8px;
+  margin-right: 5px;
   color: #fff;
+}
+.news-article-footer-r{
+  display: flex;
+  align-items: center;
 }
 .news-article-footer a{
   background: #1bbc9b;
   color: #fff;
   text-decoration: none;
   padding: 8px;
-  margin-left: 380px;
 }
+.news-body-right{
+  margin-left: 60px;
+  padding-top: 20px;
+  width: 24%;
+  background: #fff;
+}
+.news-article-right{
+  width: 90%;
+  margin: auto;
+  border: 2px solid #1bbc9b;
+  padding: 2px;
+  margin-bottom: 20px;
+}
+.news-article-image-right img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Вписываем фотографию в область */
+}
+.news-article-title-right{
+  font-size: 20px;
+}
+.news-color{
+  color: #1bbc9b;
+}
+
 /*news page part*/
 .news-article-image-page{
   margin-left: 20px;
@@ -787,10 +865,30 @@ background: #47a;
   padding-right: 6px;
 }
 
-
+@media(max-width:1100px){
+  .feedback-content{
+    margin-left: 0px;
+  }
+}
 @media(max-width: 930px){
   .logo-text{
     display: none;
+  }
+  .img-container{
+    width: 100%;
+  }
+  .about-container-pages-top{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+  .about-container-pages-bottom{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-info-pages{
+    margin: 6px;
   }
 }
 @media(max-width: 740px){
@@ -799,6 +897,61 @@ background: #47a;
   }
   .menu ul li:first-child{
     display: none;
+  }
+  .about-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-info{
+    display: flex;
+    margin-right: 0px;
+  }
+  .about-text{
+    height: 200px;
+    width: 200px;
+    background: #e8e8e8;
+  }
+  .about-info-right{
+    width: 400px;
+  }
+  .about-info-right-text{
+    font-size: 15px;
+  }
+  .feedback-content{
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .feedback-form{
+    padding-left: 10px;
+  }
+  .feedback-content-left{
+    margin: auto;
+  }
+  .feedback-content-right{
+    display: none;
+  }
+  .feedback-content-left::after{
+    color: #444444;
+    padding-left: 10px;
+    content: "Факс: 89275456737 E-mail: ppossvfu@gmail.com";
+    display: block;
+    position: relative;
+  }
+  .footer-content{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer-text{
+    margin: auto;
+    width: 80%;
+  }
+  .programmer-disigner-writer-developer-beautiful{
+    display: none;
+  }
+  .footer-text-right::after{
+    margin-left: 10px;
+    content: "2019 @DanaRyui ";
+    color: #fff;
   }
 }
 @media(max-width: 622px){
@@ -837,28 +990,12 @@ background: #47a;
     grid-template-columns: 50% 50%;
   }
   .portfolio-up-menu a{
+    width: 70%;
+    margin: auto;
     margin-top: 5px;
   }
   .img-container{
     display: grid;
     grid-template-columns: 50% 50%;
-  }
-  .about-container{
-    flex-direction: column;
-    align-items: center;
-  }
-  .about-info{
-    display: flex;
-  }
-  .about-text{
-    height: 200px;
-    width: 200px;
-    background: #e8e8e8;
-  }
-  .about-info-right{
-    width: 400px;
-  }
-  .about-info-right-text{
-    font-size: 15px;
   }
 }

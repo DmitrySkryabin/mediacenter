@@ -114,17 +114,7 @@
 	}
 }
  ?>
-<footer>
-	<div class="wrapper">
-		<div class="footer-content">
-			<div class="footer-text">
-				<p>2019</p>
-			<p>@DanaRyui</p>
-			</div>
-			<div class="up-button">
-				<a href="#">&#9650</a>
-			</div>
-		</div>
-	</div>
-</footer>
+ <?php
+	include "footer.php";
+  ?>
 </html>

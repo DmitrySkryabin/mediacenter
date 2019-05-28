@@ -37,46 +37,47 @@
 		</div>
 		<div class="about-us-pages">
 			<div class="about-container-pages">
-				<div class="about-container-pages-top">
-					<div class="about-info">
+				<div class="about-container-pages-top about-container-pages-top-videos">
+					<div class="about-info about-info-pages">
 						<div class="about-photo"><img src="../media/videos/egor.jpg" alt="" height="200px" width="200px"></div>
 						<div class="about-text-pages">
 							<h4>Ноенохов Егор</h4>
 							<p>Руководитель видео группы</p>
 						</div>
 					</div>
-					<div class="about-info">
+					<div class="about-info about-info-pages">
 						<div class="about-photo"><img src="../media/videos/sardana.jpg" alt="" height="200px" width="200px"></div>
 						<div class="about-text-pages">
 							<h4>Кондратьева Сардана</h4>
 						</div>
 					</div>
-					<div class="about-info">
+					<div class="about-info about-info-pages">
 						<div class="about-photo"><img src="../media/videos/diana.jpg" alt="" height="200px" width="200px"></div>
 						<div class="about-text-pages">
 							<h4>Кириллова Диана</h4>
 						</div>
 					</div>
-				</div>
-				<div class="about-container-pages-bottom">
-					<div class="about-info">
+					<div class="about-info about-info-pages">
 					<div class="about-photo"><img src="../media/videos/duolan.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Петров Дуолан</h4>
 					</div>
 				</div>
-				<div class="about-info">
+				<div class="about-info about-info-pages">
 					<div class="about-photo"><img src="../media/videos/misha.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Попов Михаил</h4>
 					</div>
 				</div>
-				<div class="about-info">
+				<div class="about-info about-info-pages">
 					<div class="about-photo"><img src="../media/videos/michil.jpg" alt="" height="200px" width="200px"></div>
 					<div class="about-text-pages">
 						<h4>Никитин Мичил</h4>
 					</div>
 				</div>
+				</div>
+				<div class="about-container-pages-bottom">
+
 				</div>
 			</div>
 		</div>
@@ -84,17 +85,7 @@
 		</div>
 	</div>
 </body>
-<footer>
-	<div class="wrapper">
-		<div class="footer-content">
-			<div class="footer-text">
-				<p>2019</p>
-			<p>@DanaRyui</p>
-			</div>
-			<div class="up-button">
-				<a href="#">&#9650</a>
-			</div>
-		</div>
-	</div>
-</footer>
+<?php
+ include "../footer.php";
+ ?>
 </html>
