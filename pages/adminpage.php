@@ -24,7 +24,7 @@
       <h3>Добро пожаловать! <?php echo $_SESSION['username'] ?></h3>
       <a href="news_add_page.php">Добавить новость</a>
     </div>
-    <div class="news-body">
+    <div class="admin-body">
       <?php
         $news_article = mysqli_query($connection,"SELECT * FROM `news_page` ORDER BY -`date`");
         $i=1;
@@ -33,7 +33,7 @@
          <table>
            <caption>Список новостей</caption>
            <tr>
-             <th>
+             <th style="width: 4%;">
                <div class="admin-table-delete">
                  <div class="admin-table-delete-checkbox" onmouseover="mousechange()" onmouseout="mousenotchange()">
                  <input type="checkbox" name="" value="" class="all">
@@ -43,7 +43,7 @@
                  </div>
                </div>
               </th>
-             <th style="width: 5%;">№</th>
+             <th style="width: 4%;">№</th>
              <th style="width: 55%;">Заголовок</th>
              <th style="width: 8%;">Дата публикации</th>
              <th style="width: 7%;">Показы</th>
@@ -89,10 +89,6 @@
         </div>
     </div>
   </div>
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
 </body>
 <?php
  include "../footer.php";

@@ -1,4 +1,8 @@
 <link href="/mediacenter/static/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
 <footer>
 	<div class="wrapper">
 		<div class="footer-content">
@@ -30,8 +34,33 @@
 			</div>
 		</div>
 	</div>
+  <div class="totop">
+    <i class="fa fa-chevron-circle-up fa-2x totop-color"></i>
+  </div>
 </footer>
-<!--
-<div class="up-button">
-	<a href="#"> &#9650 </a>
-</div>-->
+<script>
+  $(".totop").hide();
+  $(function() {
+  $(window).scroll(function() {
+  if($(this).scrollTop() != 0) {
+      $(".totop").fadeIn();
+      if($(this).scrollTop() != 0){
+        $(".cap").animate({
+          height : "60px"
+        });
+      }else{
+        $(".cap").animate({
+          height : "100px"
+        });
+      }
+      $(".logo").fadeOut();
+    } else {
+      $(".totop").fadeOut();
+      $(".logo").fadeIn();
+    }
+    });
+    $(".totop").click(function() {
+    $('body,html').animate({scrollTop:0},400);
+    });
+  });
+</script>
