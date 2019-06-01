@@ -3,6 +3,8 @@
 src="https://code.jquery.com/jquery-3.4.1.min.js"
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 crossorigin="anonymous"></script>
+
+</script>
 <footer>
 	<div class="wrapper">
 		<div class="footer-content">
@@ -23,14 +25,21 @@ crossorigin="anonymous"></script>
 				</div>
 			</div>
 			<div class="footer-text-center footer-text">
-				<a href="https://vk.com/ppossvfu" target="_blank"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
-				<a href="https://www.instagram.com/ppossvfu/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-				<a href="https://twitter.com/PPOSSVFU" target="_blank" ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-				<a href="https://www.youtube.com/channel/UCH7SYqZYWmAjuQdsi-vTOYQ" target="_blank"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-
+        <div class="">
+          <p>Мы в соцсетях</p>
+        </div>
+			  <div class="footer-text-center-item">
+          <a href="https://vk.com/ppossvfu" target="_blank"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/ppossvfu/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/PPOSSVFU" target="_blank" ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/channel/UCH7SYqZYWmAjuQdsi-vTOYQ" target="_blank"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+        </div>
 			</div>
 			<div class="footer-text-right footer-text">
-
+        <a href="/mediacenter">Главная</a>
+        <a href="/mediacenter/pages/news.php">Новости</a>
+        <a href="/mediacenter#portfolio">Наша структура</a>
+        <a href="/mediacenter#feedback-form-href" class="footer-feedback">Свяжитесь с нами <i class="fa fa-envelope fa-1x hide-icon"></i> </a>
 			</div>
 		</div>
 	</div>
@@ -42,20 +51,16 @@ crossorigin="anonymous"></script>
   $(".totop").hide();
   $(function() {
   $(window).scroll(function() {
-  if($(this).scrollTop() != 0) {
+  if($(this).scrollTop() >100) {
       $(".totop").fadeIn();
-      if($(this).scrollTop() != 0){
-        $(".cap").animate({
-          height : "60px"
-        });
-      }else{
-        $(".cap").animate({
-          height : "100px"
-        });
-      }
+      $(".cap").addClass("glide");
+      //$(".padding-top").addClass("glide");
       $(".logo").fadeOut();
+      id=false;
     } else {
       $(".totop").fadeOut();
+      $(".cap").removeClass("glide");
+      //$(".padding-top").removeClass("glide");
       $(".logo").fadeIn();
     }
     });

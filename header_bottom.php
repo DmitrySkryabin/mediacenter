@@ -1,4 +1,4 @@
-<div class="portfolio">
+<div class="portfolio" id="portfolio">
   <div class="portfolio-up">
     <div class="portfolio-up-text">
       <h1>Портфолио</h1>

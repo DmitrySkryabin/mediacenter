@@ -24,7 +24,9 @@
 			include "../header_bottom.php"
 		 ?>
 		<div class="videos">
-			ТУТА ВИЕДЕО!
+			<div class="youtube">
+				<iframe width="1008" height="567" src="https://www.youtube.com/embed/_VWMNU8qCnA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 		</div>
 		<div class="meating">
 			<h3>Знакомство</h3>

@@ -7,7 +7,10 @@
 	<meta charset="utf-8">
 	<title><?php echo $config['title'] ?></title>
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	<link rel="stylesheet" href="../static/style/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </head>
 
 <header>
@@ -28,14 +31,16 @@
 				$i=1;
 				$j=1;
 			?>
-				<div class="w3-content" style="max-width:800px">
-					<?php
-						while ($i<8){
-							$img = "<img class=\"mySlides\" src=\"../media/photos/{$i}.jpg\" style=\"width:100%\">";
-							echo $img;
-							$i++;
-						};
-					?>
+			<div class="fotorama">
+				<?php
+					while ($i<8){
+						$img = "<img class=\"mySlides\" src=\"../media/photos/{$i}.jpg\" style=\"width:100%\">";
+						echo $img;
+						$i++;
+					};
+				?>
+			</div>
+				<!--<div class="w3-content" style="max-width:800px">
 				</div>
 				<div class="w3-center">
 				  <div class="w3-section">
@@ -43,15 +48,8 @@
 				    <button class="w3-button" onclick="plusDivs(1)">Следующая</button>
 				  </div>
 				  <div class="w3-buton-section">
-						<?php
-							while ($j<8){
-								$button = "<button class=\"w3-button demo\" onclick=\"currentDiv({$j})\">{$j}</button>";
-								echo $button;
-								$j++;
-							};
-						?>
 				  </div>
-				</div>
+				</div>-->
 		</div>
 		<div class="meating">
 			<h3>Знакомство</h3>
