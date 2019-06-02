@@ -82,7 +82,7 @@
 									 <img src="<?php echo $news_right['image']; ?>" alt="" class="news-article-image-image-right">
 								 </figure>-->
 								 <div class="news-article-title-right">
-									 <h4><?php echo $news_right['title']; ?></h4>
+									 <h4><?php echo base64_decode($news_right['title']); ?></h4>
 								 </div>
 								 <!--<div class="news-article-text-right">
 										 <p><?php echo mb_substr($news_right['text'], 0, 100, 'utf-8'); ?>...</p>

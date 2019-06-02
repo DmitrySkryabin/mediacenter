@@ -25,10 +25,10 @@ HTML{
 	background: #fff;
   justify-content: space-around;
   align-items: center;
-  transition: 2s;
+  transition: 0.5s;
 }
 .glide{
-  transition: 2s;
+  transition: 1s;
 	height: 60px;
 }
 .logo-container{

@@ -57,7 +57,7 @@
             <tr>
               <td> <input type="checkbox" id="<?php echo $news['id']; ?>" class="one"> </td>
               <td><?php echo $i; ?></td>
-              <td> <a href="#" class="a-tr"> <?php  echo $news['title'];?> </a></td>
+              <td> <a href="#" class="a-tr"> <?php echo base64_decode($news['title']); ?> </a></td>
               <td><?php  echo $news['date'];?></td>
               <td><?php  echo $news['views'];?></td>
               <td><?php  if($news['active']==1) {echo "Да";}else{echo "Нет";}?></td>
