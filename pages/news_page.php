@@ -81,13 +81,13 @@
 	 		});
 	  });
 		const progress = document.querySelector(".progress-bar");
-		$(window).scroll(function(){
+		/*$(window).scroll(function(){
 			console.log($(".news-body-page").height());
 			console.log($(this).scrollTop());
 			let per = $(this).scrollTop()/$(".news-body-page").height()*100;
 			console.log(per);
 			progress.style.width = per + "%";
 			//$(".progress-bar").prop("style").width = $(this).scrollTop()/$(".news-body-page").height()*100+"%";
-		});
+		});*/
 	 </script>
 </html>
