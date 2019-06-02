@@ -21,9 +21,9 @@
   <?php
     if($_POST){
       if(isset($_POST['title']) && isset($_POST['image']) && isset($_POST['text-news'])){
-        $title = $_POST['title'];
+        $title = base64_encode($_POST['title']);
         $image_url = "../media/news/" . $_POST['image'];
-        $text = mysqli_real_escape_string($_POST['text-news']);
+        $text = base64_encode($_POST['text-news']);
         $date = date('Y-m-d');
         $query = "INSERT INTO `news_page` (title, image, text, active, date) VALUES ('$title', '$image_url', '$text', '1', '$date')";
         if (mysqli_query($connection, $query)) {

@@ -698,6 +698,7 @@ background: #47a;
 }
 .news-article-text{
   margin: 20px;
+  font-size: 20px;
   width: 94%;
 }
 .news-article-footer{
@@ -807,9 +808,15 @@ background: #47a;
   margin-left: 5%;
   width: 65%;
 }
-.news-article-page{
+.news-article-page-main{
   width: 100%;
   background: #fff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.news-article-page{
+  width: 80%;
+  margin: auto;
 }
 .news-article-image-page{
   margin-left: 20px;
@@ -829,6 +836,7 @@ background: #47a;
   font-size: 25px;
   margin-left: 10px;
   margin-bottom: 15px;
+  padding-top: 10px;
 }
 .news-article-title-page a{
   padding: 8px;
@@ -844,6 +852,7 @@ background: #47a;
   margin-top: 10px;
   height: 100vh;
   background: #fff;
+  margin-bottom: 30px;
 }
 .news-body-right-sidebar-page{
   padding: 0 10px;
@@ -881,23 +890,22 @@ background: #47a;
 }
 /*style of post text*/
 .citation{
-  font-size: 16px;
+  font-size: 20px;
   color: #3C3939;
   margin: 10px 0 10px 0;
   padding: 10px 20px 10px 50px;
   font-style: italic;
-  background: #BBB4B4;
+  background: #E3E3E3;
 }
 .citation q::before{
   content: "\00ab";
-  font-size: 50px;
+  font-size: 30px;
   margin-right: 20px;
 }
 .citation q::after{
-  content: "\00bb";
-  font-size: 50px;
-  padding-top: -50px;
-  margin-left: 20px;
+  content: "";
+  font-size: 20px;
+  margin-left: 25px;
 }
 /*admin pages part*/
 .admin-page-top{

@@ -29,7 +29,7 @@
 				}else{
 					$page = 1;
 				}
-				$news_on_page = 6;
+				$news_on_page = 10;
 				$start = ($page-1)*$news_on_page;
         $news_article = mysqli_query($connection,"SELECT * FROM `news_page` WHERE `active`=1 ORDER BY -`date` LIMIT $start,$news_on_page");
        ?>
@@ -45,11 +45,11 @@
 									 <img src="<?php echo $news['image']; ?>" alt="" class="news-article-image-image">
 								 </figure>
 								 <div class="news-article-title">
-									 <h4><?php echo $news['title']; ?></h4>
+									 <h4><?php echo base64_decode($news['title']); ?></h4>
 								 </div>
 								 <div class="news-article-between">
 									 <div class="news-article-text">
-		  								 <p><?php echo mb_substr($news['text'], 0, 150, 'utf-8'); ?>...</p>
+		  								 <p><?php echo base64_decode(mb_substr($news['text'], 0, 200, 'utf-8')); ?>...</p>
 		  						 </div>
 		  						 <div class="news-article-footer">
 		  							 <div class="news-article-footer-l">

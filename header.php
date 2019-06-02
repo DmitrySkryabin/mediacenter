@@ -50,6 +50,7 @@
 			  ?>
 		</ul>
 		</div>
+
 	</div>
 	<div id="auth" class="modalbackground">
 		<div class="modalwindow">

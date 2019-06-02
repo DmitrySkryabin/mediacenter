@@ -23,7 +23,7 @@
     <div class="news-body-page">
 			<div class="news-body-page-left">
 				<div class="theiaStickySidebar">
-					<div class="news-article-page">
+					<div class="news-article-page-main">
 						<?php
 			        $news_article = mysqli_query($connection,"SELECT * FROM `news_page` WHERE `id` = " . (int)$_GET['id']);
 							$news = mysqli_fetch_assoc($news_article);
@@ -31,13 +31,13 @@
 			          <div class="news-article-page">
 			            <div class="news-article-title-page">
 			              <a href="<?php echo $_GET['next'];?>#<?php echo $_GET['nextid']; ?>">Назад</a>
-			              <h4><?php echo $news['title']; ?></h4>
+			              <h4><?php echo nl2br(base64_decode($news['title'])); ?></h4>
 			            </div>
 			            <figure class="news-article-image-page">
 			              <img src="<?php echo $news['image']; ?>" alt="" class="news-article-image-image">
 			            </figure>
 			            <div class="news-article-text">
-			              <p><?php echo $news['text']; ?></p>
+			              <p><?php echo nl2br(base64_decode($news['text'])); ?></p>
 			            </div>
 			          </div>
       		</div>
@@ -80,5 +80,14 @@
 	 				additionalMarginTop: 60
 	 		});
 	  });
+		const progress = document.querySelector(".progress-bar");
+		$(window).scroll(function(){
+			console.log($(".news-body-page").height());
+			console.log($(this).scrollTop());
+			let per = $(this).scrollTop()/$(".news-body-page").height()*100;
+			console.log(per);
+			progress.style.width = per + "%";
+			//$(".progress-bar").prop("style").width = $(this).scrollTop()/$(".news-body-page").height()*100+"%";
+		});
 	 </script>
 </html>
