@@ -668,19 +668,24 @@ background: #47a;
   background: #f3f1f1;
   transition: 1s;
 }
-.news-article:hover{
-  width: 98%;
-  transition: 0.5s;
-  background: #d0cdcd;
-}
 .news-article-image{
   height: 200px;
   width: 100%;
+  overflow: hidden;
 }
 .news-article-image img{
+  transition: 0.5s;
   height: 100%;
   width: 100%;
   object-fit: cover; /* Вписываем фотографию в область */
+}
+.news-article:hover .news-article-image img{
+  transform: scale(1.05);
+  transition: 0.5s;
+  background: #d0cdcd;
+}
+.news-article:hover{
+  background: #d0cdcd;
 }
 .news-article-title{
   display: flex;
@@ -887,6 +892,13 @@ background: #47a;
 .repost a:hover{
   color: #1bbc9b;
   transition: 0.2s;
+}
+.progress-bar-line{
+  position: fixed;
+  z-index: 2;
+  height: 5px;
+  width: 0%;
+  background: #1bbc9b;
 }
 /*style of post text*/
 .citation{

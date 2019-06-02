@@ -42,7 +42,7 @@
 								 ?>
 							 <div class="news-article" id="<?php echo $news['id']; ?>">
 								 <figure class="news-article-image">
-									 <img src="<?php echo $news['image']; ?>" alt="" class="news-article-image-image">
+									 <a href="news_page.php?id=<?php echo $news['id']; ?>&next=news.php?page=<?php echo $page; ?>&nextid=<?php echo $news['id'];?>"><img src="<?php echo $news['image']; ?>" alt="title"  class="news-article-image-image"></a>
 								 </figure>
 								 <div class="news-article-title">
 									 <h4><?php echo base64_decode($news['title']); ?></h4>

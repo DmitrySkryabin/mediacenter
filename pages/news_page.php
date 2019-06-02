@@ -15,6 +15,9 @@
 	<?php
 	include "../header.php"
 	 ?>
+	 <div class="progress-bar-line">
+
+	 </div>
 </header>
 <body>
   <div class="padding-top">
@@ -80,14 +83,11 @@
 	 				additionalMarginTop: 60
 	 		});
 	  });
-		const progress = document.querySelector(".progress-bar");
-		/*$(window).scroll(function(){
+		$(window).scroll(function(){
 			console.log($(".news-body-page").height());
 			console.log($(this).scrollTop());
-			let per = $(this).scrollTop()/$(".news-body-page").height()*100;
-			console.log(per);
-			progress.style.width = per + "%";
-			//$(".progress-bar").prop("style").width = $(this).scrollTop()/$(".news-body-page").height()*100+"%";
-		});*/
+			let per = $(this).scrollTop()/($(".news-body-page").height()-140)*100;
+			$(".progress-bar-line").prop("style").width=per+"%";
+		});
 	 </script>
 </html>
