@@ -1,0 +1,2 @@
+Ошибка сохраниения в запросе:UPDATE `news_paxwxwxwge` SET `title`="0YLQtdGB0YIg0LjQt9C80LXQvdC10L0=",`image`="../media/news/kNlR-W5RuXs.jpg",`text`="d2Flc2ZkZ2hq" WHERE `id`=57
+Table 'mediacenter.news_paxwxwxwge' doesn't exist

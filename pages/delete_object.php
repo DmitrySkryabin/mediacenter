@@ -15,7 +15,7 @@
         mysqli_query($connection, $query);
       }
     }
-    if($_POST){
+    if(isset($_POST)){
       $count = 0;
       $id_elements = array();
       $i = 0;
