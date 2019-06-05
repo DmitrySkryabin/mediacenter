@@ -28,6 +28,21 @@
 				<div class="theiaStickySidebar">
 					<div class="news-article-page-main">
 						<?php
+						if(isset($_POST['comment'])){
+							$comment = $_POST['comment'];
+							$query = "SELECT `id` FROM `users` WHERE `username`=\"".$_SESSION['username']."\"";
+							$user = mysqli_fetch_assoc(mysqli_query($connection, $query));
+							$user_id = $user['id'];
+							$date = date('Y-m-d');
+							$post_id = $_GET['id'];
+							$child = 1;
+							$query = "INSERT INTO `comments` (`id`, `comment`, `user`, `date`, `child`, `post_id`) VALUES (NULL, '$comment', '$user_id', '$date', '$child', '$post_id')";
+							if(mysqli_query($connection, $query)){
+							}else{
+								$msg = "Ошибка сохраниения в запросе:" . $query . "\n" . mysqli_error($connection);
+								echo $msg;
+							}
+						}
 			        $news_article = mysqli_query($connection,"SELECT * FROM `news_page` WHERE `id` = " . (int)$_GET['id']);
 							$news = mysqli_fetch_assoc($news_article);
 			       ?>
@@ -43,6 +58,38 @@
 			              <p><?php echo nl2br(base64_decode($news['text'])); ?></p>
 			            </div>
 			          </div>
+								<div class="comment">
+									<div class="comment-content">
+										<h4>Комментарии</h4>
+										<?php
+											if (isset($_SESSION['username'])){
+											?>
+											<form class="" action="#addcommment" method="post" id="addcommment">
+												<textarea name="comment" rows="8" cols="80" class="comment-input-area"></textarea>
+												<input type="submit" name="" value="Добавить комментарий" class="comment-submit">
+											</form>
+											<?php
+										}else{ ?>
+											<p>Для того чтобы оставить комментарий нужно авторизоваться</p>
+											<?php
+											}
+											 ?>
+
+										<?php
+											$query = "SELECT * FROM `comments` INNER JOIN `users` ON `comments`.`user`=`users`.`id` WHERE `post_id`=" . $news['id'];
+											$comments = mysqli_query($connection, $query);
+											while($comment = mysqli_fetch_assoc($comments)){
+												?>
+												<div class="comment-article">
+													<h5><?php echo $comment['username'] ?></h5>
+													<p><?php echo $comment['comment'] ?></p>
+													<p>Дата: <?php echo $comment['date'] ?></p>
+												</div>
+												<?php
+											}
+										 ?>
+									</div>
+								</div>
       		</div>
       	</div>
       </div>
@@ -82,7 +129,7 @@
 	 		});
 	  });
 		$(window).scroll(function(){
-			let per = $(this).scrollTop()/($(".news-body-page").height()-140)*100;
+			let per = $(this).scrollTop()/($(".news-article-page").height())*100;
 			$(".progress-bar-line").prop("style").width=per+"%";
 		});
 	 </script>

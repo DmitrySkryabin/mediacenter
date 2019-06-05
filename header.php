@@ -36,10 +36,11 @@
 		<ul>
 			<li><a href="/mediacenter">Домой</a> </li>
 			<li><a href="/mediacenter/pages/news.php">Новости</a></li>
+			<li><a href="/mediacenter/pages/activity.php">Мероприятия</a></li>
+			<li><a href="/mediacenter/pages/news.php">Песочница</a></li>
 			<?php
 				if(isset($_SESSION['username'])){
 			 ?>
-			 	<li><a href="/mediacenter/pages/adminpage.php">Админка</a></li>
 			 	<li><a href="/mediacenter/logout.php?nextlogout=<?php echo $_SERVER["REQUEST_URI"];?>" style="background: #1bbc9b; color: #fff;">Выйти (<?php echo $_SESSION['username']; ?>)</a></li>
 			<?php
 				}else{

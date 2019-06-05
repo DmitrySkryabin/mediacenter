@@ -36,6 +36,13 @@ crossorigin="anonymous"></script>
         </div>
 			</div>
 			<div class="footer-text-right footer-text">
+				<?php
+					if(isset($_SESSION['username'])){
+				 ?>
+				 <a href="/mediacenter/pages/adminpage.php" style="font-size:30px;">Админка</a>
+				 <?php
+			 			}
+				  ?>
         <a href="/mediacenter">Главная</a>
         <a href="/mediacenter/pages/news.php">Новости</a>
         <a href="/mediacenter#portfolio">Наша структура</a>
