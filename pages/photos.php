@@ -64,30 +64,58 @@
 			<div class="about-container-pages">
 				<div class="about-container-pages-top">
 					<div class="about-info about-info-pages">
-						<div class="about-photo"><img src="../media/photos/lena.jpg" alt="" height="200px" width="200px"></div>
-						<div class="about-text-pages">
-							<h4>Еремисова Лена</h4>
-							<p>Руководитель фото группы</p>
+						<div class="about-info-pages-l">
+							<div class="about-photo"><img src="../media/photos/lena.jpg" alt="" height="200px" width="200px"></div>
+							<div class="about-text-pages">
+								<h4>Еремисова Лена</h4>
+								<p>Руководитель фото группы</p>
+							</div>
+						</div>
+						<div class="about-info-pages-r">
+							<div class="about-info-pages-r-content">
+								content
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="about-container-pages-bottom">
 					<div class="about-info about-info-pages">
-					<div class="about-photo"><img src="../media/photos/vlad.jpg" alt="" height="200px" width="200px"></div>
-					<div class="about-text-pages">
-						<h4>Лихоманов Владислав</h4>
+						<div class="about-info-pages-l">
+							<div class="about-photo"><img src="../media/photos/vlad.jpg" alt="" height="200px" width="200px"></div>
+							<div class="about-text-pages">
+								<h4>Лихоманов Владислав</h4>
+							</div>
+						</div>
+						<div class="about-info-pages-r">
+							<div class="about-info-pages-r-content">
+								content
+							</div>
+						</div>
+					</div>
+				<div class="about-info about-info-pages">
+					<div class="about-info-pages-l">
+						<div class="about-photo"><img src="../media/photos/erel.jpg" alt="" height="200px" width="200px"></div>
+						<div class="about-text-pages">
+							<h4>Никитин Эрэл Бэргэн</h4>
+						</div>
+					</div>
+					<div class="about-info-pages-r">
+						<div class="about-info-pages-r-content">
+							content
+						</div>
 					</div>
 				</div>
 				<div class="about-info about-info-pages">
-					<div class="about-photo"><img src="../media/photos/erel.jpg" alt="" height="200px" width="200px"></div>
-					<div class="about-text-pages">
-						<h4>Никитин Эрэл Бэргэн</h4>
+					<div class="about-info-pages-l">
+						<div class="about-photo"><img src="../media/photos/masha.jpg" alt="" height="200px" width="200px"></div>
+						<div class="about-text-pages">
+							<h4>Капитонова Мария</h4>
+						</div>
 					</div>
-				</div>
-				<div class="about-info about-info-pages">
-					<div class="about-photo"><img src="../media/photos/masha.jpg" alt="" height="200px" width="200px"></div>
-					<div class="about-text-pages">
-						<h4>Капитонова Мария</h4>
+					<div class="about-info-pages-r">
+						<div class="about-info-pages-r-content">
+							content
+						</div>
 					</div>
 				</div>
 				</div>

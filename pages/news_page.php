@@ -54,16 +54,14 @@
 							<p><i class="fa fa-eye fa-1x news-color" aria-hidden="true"></i>  <span><?php echo $news['views']; ?></span> </p>
 						</div>
 						<h4>Авторы текста;</h4>
-						<p>Илья Казаков, Валентин Петухов, Наталья Шелягина, Дмитрий Скрябин, Дана Рюй</p>
+						<p>Илья Казаков</p> <p> Валентин Петухов</p><p>Наталья Шелягина</p><p>Дмитрий Скрябин</p><p>Дана Рюй</p>
 						<div class="repost-div">
-							<h4>Поделись материалом<i class="fa fa-envelope fa-1x"></i></h4>
+							<h4>Поделись материалом  <i class="fa fa-envelope fa-1x icon-color" ></i></h4>
 							<div class="repost">
 								<a href="https://vk.com/ppossvfu" target="_blank"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
-			          <a href="https://www.instagram.com/ppossvfu/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-			          <a href="https://twitter.com/PPOSSVFU" target="_blank" ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+			         	<a href="https://twitter.com/PPOSSVFU" target="_blank" ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
 			          <a href="https://www.youtube.com/channel/UCH7SYqZYWmAjuQdsi-vTOYQ" target="_blank"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i></a>
-								<a href="https://twitter.com/PPOSSVFU" target="_blank" ><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
-								<a href="https://twitter.com/PPOSSVFU" target="_blank" ><i class="fa fa-odnoklassniki-square fa-2x" aria-hidden="true"></i></a>
+								<a href="https://twitter.com/PPOSSVFU" target="_blank" ><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a
 							</div>
 						</div>
 					</div>
@@ -84,8 +82,6 @@
 	 		});
 	  });
 		$(window).scroll(function(){
-			console.log($(".news-body-page").height());
-			console.log($(this).scrollTop());
 			let per = $(this).scrollTop()/($(".news-body-page").height()-140)*100;
 			$(".progress-bar-line").prop("style").width=per+"%";
 		});

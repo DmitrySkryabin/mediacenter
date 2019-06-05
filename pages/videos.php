@@ -41,44 +41,86 @@
 			<div class="about-container-pages">
 				<div class="about-container-pages-top about-container-pages-top-videos">
 					<div class="about-info about-info-pages">
-						<div class="about-photo"><img src="../media/videos/egor.jpg" alt="" height="200px" width="200px"></div>
-						<div class="about-text-pages">
-							<h4>Ноенохов Егор</h4>
-							<p>Руководитель видео группы</p>
+						<div class="about-info-pages-l">
+							<div class="about-photo"><img src="../media/videos/egor.jpg" alt="" height="200px" width="200px"></div>
+							<div class="about-text-pages">
+								<h4>Ноенохов Егор</h4>
+								<p>Руководитель видео группы</p>
+							</div>
+						</div>
+						<div class="about-info-pages-r">
+							<div class="about-info-pages-r-content">
+								content
+							</div>
 						</div>
 					</div>
 					<div class="about-info about-info-pages">
-						<div class="about-photo"><img src="../media/videos/sardana.jpg" alt="" height="200px" width="200px"></div>
-						<div class="about-text-pages">
-							<h4>Кондратьева Сардана</h4>
+						<div class="about-info-pages-l">
+							<div class="about-photo"><img src="../media/videos/sardana.jpg" alt="" height="200px" width="200px"></div>
+							<div class="about-text-pages">
+								<h4>Кондратьева Сардана</h4>
+							</div>
+						</div>
+						<div class="about-info-pages-r">
+							<div class="about-info-pages-r-content">
+								content
+							</div>
 						</div>
 					</div>
 					<div class="about-info about-info-pages">
-						<div class="about-photo"><img src="../media/videos/diana.jpg" alt="" height="200px" width="200px"></div>
-						<div class="about-text-pages">
-							<h4>Кириллова Диана</h4>
+						<div class="about-info-pages-l">
+							<div class="about-photo"><img src="../media/videos/diana.jpg" alt="" height="200px" width="200px"></div>
+							<div class="about-text-pages">
+								<h4>Кириллова Диана</h4>
+							</div>
+						</div>
+						<div class="about-info-pages-r">
+							<div class="about-info-pages-r-content">
+								content
+							</div>
 						</div>
 					</div>
 					<div class="about-info about-info-pages">
-					<div class="about-photo"><img src="../media/videos/duolan.jpg" alt="" height="200px" width="200px"></div>
-					<div class="about-text-pages">
-						<h4>Петров Дуолан</h4>
+						<div class="about-info-pages-l">
+							<div class="about-photo"><img src="../media/videos/duolan.jpg" alt="" height="200px" width="200px"></div>
+							<div class="about-text-pages">
+								<h4>Петров Дуолан</h4>
+							</div>
+						</div>
+						<div class="about-info-pages-r">
+							<div class="about-info-pages-r-content">
+								content
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="about-info about-info-pages">
-					<div class="about-photo"><img src="../media/videos/misha.jpg" alt="" height="200px" width="200px"></div>
-					<div class="about-text-pages">
-						<h4>Попов Михаил</h4>
+					<div class="about-info about-info-pages">
+						<div class="about-info-pages-l">
+							<div class="about-photo"><img src="../media/videos/misha.jpg" alt="" height="200px" width="200px"></div>
+							<div class="about-text-pages">
+								<h4>Попов Михаил</h4>
+							</div>
+						</div>
+						<div class="about-info-pages-r">
+							<div class="about-info-pages-r-content">
+								content
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="about-info about-info-pages">
-					<div class="about-photo"><img src="../media/videos/michil.jpg" alt="" height="200px" width="200px"></div>
-					<div class="about-text-pages">
-						<h4>Никитин Мичил</h4>
+					<div class="about-info about-info-pages">
+						<div class="about-info-pages-l">
+							<div class="about-photo"><img src="../media/videos/michil.jpg" alt="" height="200px" width="200px"></div>
+							<div class="about-text-pages">
+								<h4>Никитин Мичил</h4>
+							</div>
+						</div>
+						<div class="about-info-pages-r">
+							<div class="about-info-pages-r-content">
+								content
+							</div>
+						</div>
 					</div>
-				</div>
-				</div>
-				<div class="about-container-pages-bottom">
+					</div>
+					<div class="about-container-pages-bottom">
 
 				</div>
 			</div>

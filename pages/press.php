@@ -36,30 +36,60 @@
 			<div class="about-container-pages">
 				<div class="about-container-pages-top">
 					<div class="about-info about-info-pages">
-						<div class="about-photo"><img src="../media/press/galya.jpg" alt="" height="200px" width="200px"></div>
-						<div class="about-text-pages">
-							<h4>Бурцева галина</h4>
-							<p>Руководитель пресс группы</p>
+						<div class="about-info-pages-l">
+							<div class="about-photo"><img src="../media/press/galya.jpg" alt="" height="200px" width="200px"></div>
+							<div class="about-text-pages">
+								<h4>Бурцева галина</h4>
+								<p>Руководитель пресс группы</p>
+							</div>
+						</div>
+						<div class="about-info-pages-r">
+							<div class="about-info-pages-r-content">
+								<p>Отличный кореспондент</p>
+								<p>Знает как правильно довести информацию</p>
+								<p> <i class="fa fa-whatsapp"></i> +79241772875 </p>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="about-container-pages-bottom">
 					<div class="about-info about-info-pages">
-					<div class="about-photo"><img src="../media/press/mira.jpg" alt="" height="200px" width="200px"></div>
-					<div class="about-text-pages">
-						<h4>Иванова Любомира</h4>
+						<div class="about-info-pages-l">
+							<div class="about-photo"><img src="../media/press/mira.jpg" alt="" height="200px" width="200px"></div>
+							<div class="about-text-pages">
+								<h4>Иванова Любомира</h4>
+							</div>
+						</div>
+						<div class="about-info-pages-r">
+							<div class="about-info-pages-r-content">
+								content
+							</div>
+						</div>
+					</div>
+				<div class="about-info about-info-pages">
+					<div class="about-info-pages-l">
+						<div class="about-photo"><img src="../media/press/tonya.jpg" alt="" height="200px" width="200px"></div>
+						<div class="about-text-pages">
+							<h4>Необутова Антонина</h4>
+						</div>
+					</div>
+					<div class="about-info-pages-r">
+						<div class="about-info-pages-r-content">
+							content
+						</div>
 					</div>
 				</div>
 				<div class="about-info about-info-pages">
-					<div class="about-photo"><img src="../media/press/tonya.jpg" alt="" height="200px" width="200px"></div>
-					<div class="about-text-pages">
-						<h4>Необутова Антонина</h4>
+					<div class="about-info-pages-l">
+						<div class="about-photo"><img src="../media/press/ruslan.jpg" alt="" height="200px" width="200px"></div>
+						<div class="about-text-pages">
+							<h4>Терентьев Руслан</h4>
+						</div>
 					</div>
-				</div>
-				<div class="about-info about-info-pages">
-					<div class="about-photo"><img src="../media/press/ruslan.jpg" alt="" height="200px" width="200px"></div>
-					<div class="about-text-pages">
-						<h4>Терентьев Руслан</h4>
+					<div class="about-info-pages-r">
+						<div class="about-info-pages-r-content">
+							content
+						</div>
 					</div>
 				</div>
 				</div>

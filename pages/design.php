@@ -40,30 +40,58 @@
 			<div class="about-container-pages">
 				<div class="about-container-pages-top">
 					<div class="about-info about-info-pages">
-						<div class="about-photo"><img src="../media/design/kunnay.png" alt="" height="200px" width="200px"></div>
-						<div class="about-text-pages">
-							<h4>Копырина Кюннэй</h4>
-							<p>Руководитель дизайн группы</p>
+						<div class="about-info-pages-l">
+							<div class="about-photo"><img src="../media/design/kunnay.png" alt="" height="200px" width="200px"></div>
+							<div class="about-text-pages">
+								<h4>Копырина Кюннэй</h4>
+								<p>Руководитель дизайн группы</p>
+							</div>
+						</div>
+						<div class="about-info-pages-r">
+							<div class="about-info-pages-r-content">
+								content
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="about-container-pages-bottom">
 					<div class="about-info about-info-pages">
-					<div class="about-photo"><img src="../media/design/petr.jpg" alt="" height="200px" width="200px"></div>
-					<div class="about-text-pages">
-						<h4>Петров Петр</h4>
+						<div class="about-info-pages-l">
+							<div class="about-photo"><img src="../media/design/petr.jpg" alt="" height="200px" width="200px"></div>
+							<div class="about-text-pages">
+								<h4>Петров Петр</h4>
+							</div>
+						</div>
+						<div class="about-info-pages-r">
+							<div class="about-info-pages-r-content">
+								content
+							</div>
+						</div>
+				</div>
+				<div class="about-info about-info-pages">
+					<div class="about-info-pages-l">
+						<div class="about-photo"><img src="../media/design/kirill.jpg" alt="" height="200px" width="200px"></div>
+						<div class="about-text-pages">
+							<h4>Иванов Кирилл</h4>
+						</div>
+					</div>
+					<div class="about-info-pages-r">
+						<div class="about-info-pages-r-content">
+							content
+						</div>
 					</div>
 				</div>
 				<div class="about-info about-info-pages">
-					<div class="about-photo"><img src="../media/design/kirill.jpg" alt="" height="200px" width="200px"></div>
-					<div class="about-text-pages">
-						<h4>Иванов Кирилл</h4>
+					<div class="about-info-pages-l">
+						<div class="about-photo"><img src="../media/design/dulustan.jpg" alt="" height="200px" width="200px"></div>
+						<div class="about-text-pages">
+							<h4>Дьулусан Дьулустанов</h4>
+						</div>
 					</div>
-				</div>
-				<div class="about-info about-info-pages">
-					<div class="about-photo"><img src="../media/design/dulustan.jpg" alt="" height="200px" width="200px"></div>
-					<div class="about-text-pages">
-						<h4>Дьулусан Дьулустанов</h4>
+					<div class="about-info-pages-r">
+						<div class="about-info-pages-r-content">
+							content
+						</div>
 					</div>
 				</div>
 				</div>
